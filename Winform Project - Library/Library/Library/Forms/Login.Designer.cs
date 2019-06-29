@@ -33,12 +33,12 @@
             this.LblPassword = new System.Windows.Forms.Label();
             this.TxtUsername = new System.Windows.Forms.TextBox();
             this.TxtPassword = new System.Windows.Forms.TextBox();
-            this.BtnLogin = new MetroFramework.Controls.MetroButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnExit = new MetroFramework.Controls.MetroButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.LblWelcome = new System.Windows.Forms.Label();
             this.LblInstruction = new System.Windows.Forms.Label();
+            this.BtnLogin = new System.Windows.Forms.Button();
+            this.BtnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -80,22 +80,6 @@
             this.TxtPassword.Size = new System.Drawing.Size(208, 35);
             this.TxtPassword.TabIndex = 3;
             // 
-            // BtnLogin
-            // 
-            this.BtnLogin.BackColor = System.Drawing.Color.Turquoise;
-            this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnLogin.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.BtnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnLogin.Location = new System.Drawing.Point(716, 777);
-            this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(174, 88);
-            this.BtnLogin.TabIndex = 5;
-            this.BtnLogin.Text = "Login";
-            this.BtnLogin.UseCustomBackColor = true;
-            this.BtnLogin.UseCustomForeColor = true;
-            this.BtnLogin.UseSelectable = true;
-            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -107,22 +91,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
-            // 
-            // BtnExit
-            // 
-            this.BtnExit.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnExit.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.BtnExit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnExit.Location = new System.Drawing.Point(912, 777);
-            this.BtnExit.Name = "BtnExit";
-            this.BtnExit.Size = new System.Drawing.Size(174, 88);
-            this.BtnExit.TabIndex = 8;
-            this.BtnExit.Text = "Exit";
-            this.BtnExit.UseCustomBackColor = true;
-            this.BtnExit.UseCustomForeColor = true;
-            this.BtnExit.UseSelectable = true;
-            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
             // pictureBox2
             // 
@@ -157,18 +125,50 @@
             this.LblInstruction.TabIndex = 12;
             this.LblInstruction.Text = "Please enter your username and password to  sign in to the system.";
             // 
+            // BtnLogin
+            // 
+            this.BtnLogin.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnLogin.FlatAppearance.BorderSize = 0;
+            this.BtnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnLogin.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnLogin.Location = new System.Drawing.Point(727, 779);
+            this.BtnLogin.Name = "BtnLogin";
+            this.BtnLogin.Size = new System.Drawing.Size(175, 86);
+            this.BtnLogin.TabIndex = 13;
+            this.BtnLogin.Text = "LOGIN";
+            this.BtnLogin.UseVisualStyleBackColor = false;
+            this.BtnLogin.Click += new System.EventHandler(this.BtnLogin_Click);
+            // 
+            // BtnExit
+            // 
+            this.BtnExit.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnExit.FlatAppearance.BorderSize = 0;
+            this.BtnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnExit.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnExit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BtnExit.Location = new System.Drawing.Point(917, 779);
+            this.BtnExit.Name = "BtnExit";
+            this.BtnExit.Size = new System.Drawing.Size(175, 86);
+            this.BtnExit.TabIndex = 14;
+            this.BtnExit.Text = "EXIT";
+            this.BtnExit.UseVisualStyleBackColor = false;
+            this.BtnExit.Click += new System.EventHandler(this.BtnExit_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1391, 885);
+            this.Controls.Add(this.BtnExit);
+            this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.LblInstruction);
             this.Controls.Add(this.LblWelcome);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.BtnExit);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.TxtUsername);
             this.Controls.Add(this.LblPassword);
@@ -178,7 +178,6 @@
             this.Text = "Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
-            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -192,11 +191,11 @@
         private System.Windows.Forms.Label LblPassword;
         private System.Windows.Forms.TextBox TxtUsername;
         private System.Windows.Forms.TextBox TxtPassword;
-        private MetroFramework.Controls.MetroButton BtnLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private MetroFramework.Controls.MetroButton BtnExit;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label LblWelcome;
         private System.Windows.Forms.Label LblInstruction;
+        private System.Windows.Forms.Button BtnLogin;
+        private System.Windows.Forms.Button BtnExit;
     }
 }

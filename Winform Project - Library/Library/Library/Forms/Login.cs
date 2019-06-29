@@ -27,7 +27,10 @@ namespace Library.Forms
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+            foreach(var item in _context.Users.ToList())
+            {
 
+            }
             if (!_context.Users.Any(u => u.UserName == TxtUsername.Text))
             {
                 LblUserName.ForeColor = Color.Red;
@@ -44,12 +47,10 @@ namespace Library.Forms
             {
                 LblPassword.ForeColor = SystemColors.ControlText;
 
-                
-
-                Dashboard dashboard = new Dashboard(TxtUsername.Text);
+                Dashboard dashboard = new Dashboard("Welcome, " +TxtUsername.Text+"!");
 
                 this.Hide();
-                dashboard.ShowDialog();
+                dashboard.Show();
             }
         }
 
@@ -58,10 +59,6 @@ namespace Library.Forms
             Application.Exit();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void BtnExit_Click(object sender, EventArgs e)
         {

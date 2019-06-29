@@ -18,3 +18,27 @@ C:\Users\ASUS\Desktop\Winform-Project---Library\Library\Library\bin\Debug\Entity
 C:\Users\ASUS\Desktop\Winform-Project---Library\Library\Library\obj\Debug\Library.Migrations.InitMigration.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Library\Library\obj\Debug\Library.Forms.Login.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\Library.exe.config
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\Library.exe
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\Library.pdb
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\MetroFramework.Design.dll
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\MetroFramework.dll
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Dashboard.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Login.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.InitMigration.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Properties.Resources.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.csproj.CopyComplete
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.exe
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.pdb
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Account.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Book.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Customer.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.User.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
