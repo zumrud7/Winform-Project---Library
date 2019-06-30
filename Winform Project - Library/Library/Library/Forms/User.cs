@@ -128,12 +128,31 @@ namespace Library.Forms
             user.UserName = TxtUserName.Text;
             user.Password = TxtPassword.Text;
 
+
+            #region Verifying that duplicate user name is not entered in the system
+            List<Library.Models.User> us = _context.Users.Where(u => u.UserName.Contains(user.UserName)).ToList();
+
+            foreach(var item in us)
+            {
+                if(item.UserName == user.UserName)
+                {
+                    LblUserName.ForeColor = Color.Red;
+                    MessageBox.Show("User name is already in use, please choose a different user name.", "Attention!");
+                    return;
+                }
+            }
+
+            #endregion
+
+
+
             _context.Users.Add(user);
             _context.SaveChanges();
 
             FillUserDetails();
             FormReset();
 
+            MessageBox.Show("New User is successfully added to the list.", "UPDATE");
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)
@@ -145,18 +164,23 @@ namespace Library.Forms
                 _context.Users.Remove(this.SelectedUser);
                 _context.SaveChanges();
 
-                MessageBox.Show("User successfully removed from the list.", "Deleted");
-
                 FillUserDetails();
                 FormReset();
                 ButtonReset();
+
+
+                MessageBox.Show("User is successfully removed from the list.", "Deleted");
             }
 
         }
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            FormReset();
+            if (!FormValidation())
+            {
+                return;
+            }
+
 
             SelectedUser.FirstName = TxtFirstName.Text;
             SelectedUser.LastName = TxtLastName.Text;
@@ -166,7 +190,10 @@ namespace Library.Forms
             _context.SaveChanges();
 
             FillUserDetails();
+            FormReset();
             ButtonReset();
+
+            MessageBox.Show("Selected user is successfully updated", "UPDATE");
         }
 
         private void BtnSearch_Click(object sender, EventArgs e)
@@ -189,8 +216,8 @@ namespace Library.Forms
 
         #endregion
 
-        
-        // Selecting users from DGV user list
+
+        #region Selecting users from DGV user list
         private void DgvUser_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             BtnAdd.Visible = false;
@@ -213,8 +240,10 @@ namespace Library.Forms
             }
         }
 
-        
-        // Function for hiding passwords visibility with "*" character
+        #endregion
+
+
+        #region Function for hiding passwords visibility with "*" character in DGV list
         private void DgvUser_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (e.ColumnIndex == 4 && e.Value != null)
@@ -223,10 +252,10 @@ namespace Library.Forms
             }
         }
 
-       
+        #endregion
 
-        
 
-        
+
+
     }
 }
