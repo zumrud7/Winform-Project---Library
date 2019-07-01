@@ -220,7 +220,7 @@ namespace Library.Forms
 
                 TxtName.Text = SelectedBook.Name;
                 TxtPrice.Text = SelectedBook.Price.ToString();
-                NumCount.Text = SelectedBook.Count.ToString();
+                NumCount.Value = SelectedBook.Count;
 
             }
 

@@ -103,11 +103,16 @@
     <Compile Include="Migrations\201906281544089_InitMigration.Designer.cs">
       <DependentUpon>201906281544089_InitMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907011057414_AddNewTable.cs" />
+    <Compile Include="Migrations\201907011057414_AddNewTable.Designer.cs">
+      <DependentUpon>201907011057414_AddNewTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Models\OrderInfo.cs" />
+    <Compile Include="Models\ReturnPeriod.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201906281544089_InitMigration.resx">
       <DependentUpon>201906281544089_InitMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907011057414_AddNewTable.resx">
+      <DependentUpon>201907011057414_AddNewTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

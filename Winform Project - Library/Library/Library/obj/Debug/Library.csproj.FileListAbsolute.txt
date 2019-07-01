@@ -41,4 +41,5 @@ C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Librar
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Book.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Customer.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.User.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.AddNewTable.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache

@@ -27,6 +27,11 @@ namespace Library.Models
         public virtual Book Book { get; set; }
 
         [Required]
+        public int ReturnPeriodId { get; set; }
+
+        public virtual ReturnPeriod ReturnPeriod { get; set; }
+
+        [Required]
         public DateTime Date { get; set; }
 
         public int OrderInfoId { get; set; }
