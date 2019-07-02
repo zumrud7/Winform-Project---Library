@@ -25,6 +25,7 @@ namespace Library.Forms
             _context = new LibraryContext();
         }
 
+        #region LOGIN - EXIT BUTTON FUNCTIONS
         private void BtnLogin_Click(object sender, EventArgs e)
         {
             foreach(var item in _context.Users.ToList())
@@ -65,5 +66,6 @@ namespace Library.Forms
             this.Close();
         }
 
+        #endregion
     }
 }

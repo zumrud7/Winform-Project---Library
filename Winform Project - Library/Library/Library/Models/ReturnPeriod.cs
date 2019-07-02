@@ -17,7 +17,7 @@ namespace Library.Models
 
         public int Id { get; set; }
 
-        public string Name { get; set; }
+        public DateTime ReturnDate { get; set; }
 
         public ICollection<OrderItem> orderItems { get; set; }
     }

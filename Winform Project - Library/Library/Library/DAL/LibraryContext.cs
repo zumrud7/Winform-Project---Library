@@ -25,7 +25,6 @@ namespace Library.DAL
 
         public DbSet<User> Users { get; set; }
 
-        public DbSet<OrderInfo> OrderInfos { get; set; }
 
         public DbSet<ReturnPeriod> ReturnPeriods { get; set; }
     }

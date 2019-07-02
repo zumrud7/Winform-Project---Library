@@ -13,8 +13,6 @@ namespace Library.Models
     {
         public Book()
         {
-            customers = new HashSet<Customer>();
-
             orderitems = new HashSet<OrderItem>();
         }
 
@@ -26,10 +24,9 @@ namespace Library.Models
         [Required]
         public string Name { get; set; }
 
-        [Required, Column(TypeName = "money")]
-        public decimal Price { get; set; }
 
-        public ICollection<Customer> customers { get; set; }
+        [Required]
+        public decimal Price { get; set; }
 
         public ICollection<OrderItem> orderitems { get; set; }
     }

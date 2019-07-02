@@ -27,7 +27,8 @@ namespace Library.Forms
             FillUserDetails();
         }
 
-        #region Fill DGV with user List
+
+        #region FILL DGV WITH USER LIST
         private void FillUserDetails()
         {
             DgvUser.Rows.Clear();
@@ -45,7 +46,7 @@ namespace Library.Forms
         #endregion
 
 
-        #region Methods
+        #region VALIDATION AND RESET METHODS
 
         private bool FormValidation()
         {
@@ -111,7 +112,7 @@ namespace Library.Forms
         #endregion
 
 
-        #region Button Functions
+        #region BUTTON FUNCTIONS
 
         private void BtnAdd_Click(object sender, EventArgs e)
         {
@@ -129,7 +130,8 @@ namespace Library.Forms
             user.Password = TxtPassword.Text;
 
 
-            #region Verifying that duplicate user name is not entered in the system
+            #region VERIFYING THAT DUPLICATE USER NAME IS NOT ENTERED TO THE SYSTEM
+
             List<Library.Models.User> us = _context.Users.Where(u => u.UserName.Contains(user.UserName)).ToList();
 
             foreach(var item in us)
@@ -217,7 +219,7 @@ namespace Library.Forms
         #endregion
 
 
-        #region Selecting users from DGV user list
+        #region SELECTING USERS FROM DGV USER LIST
         private void DgvUser_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             BtnAdd.Visible = false;
@@ -243,7 +245,7 @@ namespace Library.Forms
         #endregion
 
 
-        #region Function for hiding passwords visibility with "*" character in DGV list
+        #region FUNCTIONS FOR HIDING PASSWORD VISIBILITY WITH "*" CHARACTER IN DGV LIST
         private void DgvUser_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             if (e.ColumnIndex == 4 && e.Value != null)

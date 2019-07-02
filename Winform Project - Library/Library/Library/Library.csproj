@@ -107,11 +107,31 @@
     <Compile Include="Migrations\201907011057414_AddNewTable.Designer.cs">
       <DependentUpon>201907011057414_AddNewTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907021105497_OrderInfoTableDeleted.cs" />
+    <Compile Include="Migrations\201907021105497_OrderInfoTableDeleted.Designer.cs">
+      <DependentUpon>201907021105497_OrderInfoTableDeleted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907021543367_RemoveReguiredPrice.cs" />
+    <Compile Include="Migrations\201907021543367_RemoveReguiredPrice.Designer.cs">
+      <DependentUpon>201907021543367_RemoveReguiredPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907021551111_PriceColRequiredAdded.cs" />
+    <Compile Include="Migrations\201907021551111_PriceColRequiredAdded.Designer.cs">
+      <DependentUpon>201907021551111_PriceColRequiredAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907021618304_BookChanged.cs" />
+    <Compile Include="Migrations\201907021618304_BookChanged.Designer.cs">
+      <DependentUpon>201907021618304_BookChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907021805433_ReturnDateColTypeChange.cs" />
+    <Compile Include="Migrations\201907021805433_ReturnDateColTypeChange.Designer.cs">
+      <DependentUpon>201907021805433_ReturnDateColTypeChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\ComboboxDate.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\OrderItem.cs" />
-    <Compile Include="Models\OrderInfo.cs" />
     <Compile Include="Models\ReturnPeriod.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
@@ -139,6 +159,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907011057414_AddNewTable.resx">
       <DependentUpon>201907011057414_AddNewTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021105497_OrderInfoTableDeleted.resx">
+      <DependentUpon>201907021105497_OrderInfoTableDeleted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021543367_RemoveReguiredPrice.resx">
+      <DependentUpon>201907021543367_RemoveReguiredPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021551111_PriceColRequiredAdded.resx">
+      <DependentUpon>201907021551111_PriceColRequiredAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021618304_BookChanged.resx">
+      <DependentUpon>201907021618304_BookChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907021805433_ReturnDateColTypeChange.resx">
+      <DependentUpon>201907021805433_ReturnDateColTypeChange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -11,8 +11,6 @@ namespace Library.Models
 {
     class OrderItem
     {
-
-
         public int Id { get; set; }
 
 
@@ -34,9 +32,12 @@ namespace Library.Models
         [Required]
         public DateTime Date { get; set; }
 
-        public int OrderInfoId { get; set; }
+        [Required]
+        public int Count { get; set; }
 
-        public virtual OrderInfo OrderInfo { get; set; }
+        [Required]
+        public decimal Price { get; set; }
+
 
     }
 }

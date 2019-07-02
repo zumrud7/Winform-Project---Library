@@ -27,7 +27,7 @@ namespace Library.Forms
             FillBookList();
         }
 
-        #region Fill Dgv with book list
+        #region FILL DGV WITH BOOK LIST
         private void FillBookList()
         {
             DgvBook.Rows.Clear();
@@ -44,7 +44,7 @@ namespace Library.Forms
         #endregion
 
 
-        #region Methods
+        #region VALIDATION AND RESET METHODS 
         private bool Validation()
         {
             if (string.IsNullOrEmpty(TxtName.Text))
@@ -97,7 +97,7 @@ namespace Library.Forms
         #endregion
 
 
-        #region Button Functions
+        #region BUTTON FUNCTIONS
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             if (!Validation())
@@ -114,7 +114,7 @@ namespace Library.Forms
 
             #region Verifying that duplicate book name is not entered in the system
 
-            List<Library.Models.Book> bk = _context.Books.Where(b => b.Name.Contains(TxtName.Text)).ToList();
+            List<Library.Models.Book> bk = _context.Books.OrderByDescending(b => b.Id).Where(b => b.Name.Contains(TxtName.Text)).ToList();
 
             foreach(var item in bk)
             {
@@ -202,7 +202,7 @@ namespace Library.Forms
         #endregion
 
 
-        #region Select books from DGV Book List
+        #region SELECT BOOKS FROM DGV BOOK LIST
         private void DgvBook_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             BtnAdd.Visible = false;

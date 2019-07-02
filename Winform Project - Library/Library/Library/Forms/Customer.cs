@@ -28,7 +28,7 @@ namespace Library.Forms
         }
 
 
-        #region Fill Dgv with customer list
+        #region FILL DGV CUSTOMER LIST
         private void FillCustomerList()
         {
             DgvCustomer.Rows.Clear();
@@ -46,7 +46,8 @@ namespace Library.Forms
         #endregion
 
 
-        #region Methods
+        #region VALIDATION AND RESET METHODS
+
         private bool Validation()
         {
             if (string.IsNullOrEmpty(TxtFirstName.Text))
@@ -110,10 +111,12 @@ namespace Library.Forms
             BtnDelete.Visible = false;
         }
 
+
         #endregion
 
 
-        #region Button Functions
+        #region BUTTON FUNCTIONS
+
         private void BtnSearch_Click(object sender, EventArgs e)
         {
 
@@ -148,7 +151,7 @@ namespace Library.Forms
             customer.Email = TxtEmail.Text;
 
 
-            #region Verifying that duplicate email address is not entered in the system
+            #region VERIFY THAT DUPLICATE EMAIL ADDRESS IS NOT ENTERED TO THE SYSTEM
 
             List<Library.Models.Customer> cs = _context.Customers.Where(c => c.Email.Contains(TxtEmail.Text)).ToList();
 
@@ -163,6 +166,8 @@ namespace Library.Forms
             }
 
             #endregion
+
+
 
             _context.Customers.Add(customer);
             _context.SaveChanges();
@@ -216,7 +221,7 @@ namespace Library.Forms
         #endregion
 
 
-        #region Selecting customers from DGV user list
+        #region SELECTING CUSTOMERS FROM DGV CUSTOMER LIST
         private void DgvCustomer_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             BtnAdd.Visible = false;
