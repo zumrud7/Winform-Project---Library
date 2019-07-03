@@ -13,7 +13,7 @@ namespace Library.Models
     {
         public Customer()
         {
-            orderitems = new HashSet<OrderItem>();
+            orders = new HashSet<Order>();
         }
 
         public int Id { get; set; }
@@ -31,7 +31,7 @@ namespace Library.Models
         [Required]
         public string Email { get; set; }
 
-        public ICollection<OrderItem> orderitems { get; set; }
+        public ICollection<Order> orders { get; set; }
 
     }
 }

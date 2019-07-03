@@ -13,31 +13,23 @@ namespace Library.Models
     {
         public int Id { get; set; }
 
-
-        [Required]
-        public int CustomerId { get; set; }
-
-        public virtual Customer Customer { get; set; }
-
         [Required]
         public int BookId { get; set; }
 
         public virtual Book Book { get; set; }
-
-        [Required]
-        public int ReturnPeriodId { get; set; }
-
-        public virtual ReturnPeriod ReturnPeriod { get; set; }
-
-        [Required]
-        public DateTime Date { get; set; }
-
+        
         [Required]
         public int Count { get; set; }
 
         [Required]
         public decimal Price { get; set; }
 
+        [Required]
+        public DateTime ReturnDate { get; set; }
 
+        [Required]
+        public int OrderId { get; set; }
+
+        public virtual Order Order { get; set; }
     }
 }

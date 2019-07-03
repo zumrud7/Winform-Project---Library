@@ -127,12 +127,24 @@
     <Compile Include="Migrations\201907021805433_ReturnDateColTypeChange.Designer.cs">
       <DependentUpon>201907021805433_ReturnDateColTypeChange.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907030728436_ReturnPeriodClassRemoved.cs" />
+    <Compile Include="Migrations\201907030728436_ReturnPeriodClassRemoved.Designer.cs">
+      <DependentUpon>201907030728436_ReturnPeriodClassRemoved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907032032558_OrderTableAdded.cs" />
+    <Compile Include="Migrations\201907032032558_OrderTableAdded.Designer.cs">
+      <DependentUpon>201907032032558_OrderTableAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907032041341_OrderTblAddedInContext.cs" />
+    <Compile Include="Migrations\201907032041341_OrderTblAddedInContext.Designer.cs">
+      <DependentUpon>201907032041341_OrderTblAddedInContext.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\ComboboxDate.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderItem.cs" />
-    <Compile Include="Models\ReturnPeriod.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -174,6 +186,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907021805433_ReturnDateColTypeChange.resx">
       <DependentUpon>201907021805433_ReturnDateColTypeChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907030728436_ReturnPeriodClassRemoved.resx">
+      <DependentUpon>201907030728436_ReturnPeriodClassRemoved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907032032558_OrderTableAdded.resx">
+      <DependentUpon>201907032032558_OrderTableAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907032041341_OrderTblAddedInContext.resx">
+      <DependentUpon>201907032041341_OrderTblAddedInContext.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

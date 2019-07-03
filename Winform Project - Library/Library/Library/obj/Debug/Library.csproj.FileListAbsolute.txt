@@ -45,6 +45,8 @@ C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Librar
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.OrderInfoTableDeleted.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.RemoveReguiredPrice.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.PriceColRequiredAdded.resources
-C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.BookChanged.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.ReturnDateColTypeChange.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.ReturnPeriodClassRemoved.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.OrderTableAdded.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.OrderTblAddedInContext.resources
