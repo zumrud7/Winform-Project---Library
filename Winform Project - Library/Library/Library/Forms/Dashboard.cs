@@ -24,6 +24,7 @@ namespace Library.Forms
         private decimal RemovedPrice;
 
 
+
         public Dashboard(string UserFullName)
         {
             InitializeComponent();
@@ -96,7 +97,11 @@ namespace Library.Forms
 
         private void BtnNewOrder_Click(object sender, EventArgs e)
         {
+
             PnlNewOrder.Visible = true;
+            PnlNewOrder.BringToFront();
+
+
 
             FillCustomerList();
             FillBookList();
@@ -116,7 +121,10 @@ namespace Library.Forms
 
         private void BtnReturnBook_Click(object sender, EventArgs e)
         {
-            PnlNewOrder.Visible = false;
+
+            //PnlReturnBookBase.Visible = false;
+            //PnlReturnBookBase.BringToFront();
+
 
 
             BtnNewOrder.BackColor = Color.LightSeaGreen;
@@ -127,7 +135,6 @@ namespace Library.Forms
         private void BtnTrackOrders_Click(object sender, EventArgs e)
         {
             PnlNewOrder.Visible = false;
-
 
             BtnNewOrder.BackColor = Color.LightSeaGreen;
             BtnReturnBook.BackColor = Color.LightSeaGreen;
@@ -155,48 +162,18 @@ namespace Library.Forms
         {
             foreach(var item in _context.Books.ToList())
             {
-                CmbCNOBook.Items.Add(item.Name);
+                if(item.Count == 0)
+                {
+                    CmbCNOBook.Items.Remove(item.Name);
+                }
+                else
+                {
+                    CmbCNOBook.Items.Add(item.Name);
+                }
+
             }
         }
 
-
-        #endregion
-
-
-        #region FUNCTION TO FILL DATAGRIDVIEW
-
-        private void FillOrderItemList()
-        {
-            DgvCNOOrderList.Rows.Clear();
-
-            DgvCNOOrderList.Columns[1].DefaultCellStyle.Format = "dd/MM/yyyy";
-            DgvCNOOrderList.Columns[7].DefaultCellStyle.Format = "dd/MM/yyyy";
-
-            
-            //List<Order> orders = _context.Orders.Where(c => c.Id.Contains(CmbCNOCustomer.Text)).ToList();
-
-            //foreach (var item in books)
-            //{
-            //    DgvBook.Rows.Add(item.Id,
-            //                        item.Name,
-            //                        item.Price,
-            //                        item.Count);
-            //}
-
-
-            foreach (var item in _context.OrderItems.ToList())
-            {
-                DgvCNOOrderList.Rows.Add(item.OrderId,
-                                         item.Order.CreatedOn,
-                                         item.Order.CustomerId,
-                                         item.Order.Customer.FirstName + " " + item.Order.Customer.LastName,
-                                         item.BookId,
-                                         item.Book.Name,
-                                         item.Count,
-                                         item.ReturnDate,
-                                         item.Price);
-            }
-        }
 
         #endregion
 
@@ -235,28 +212,6 @@ namespace Library.Forms
                 return false;
             }
 
-            if (DateReturn.Value == DateTime.Now)
-            {
-                LblCNOCustomer.ForeColor = SystemColors.ControlText;
-                LblCNOBook.ForeColor = SystemColors.ControlText;
-                LblCNOCount.ForeColor = SystemColors.ControlText;
-                LblCNOReturnDate.ForeColor = Color.Red;
-
-                return false;
-
-            }
-
-            if(DateReturn.Value < DateTime.Now)
-            {
-                LblCNOCustomer.ForeColor = SystemColors.ControlText;
-                LblCNOBook.ForeColor = SystemColors.ControlText;
-                LblCNOCount.ForeColor = SystemColors.ControlText;
-                LblCNOReturnDate.ForeColor = Color.Red;
-
-                MessageBox.Show("Return date cannot be earlier than order create date", "Attention");
-
-                return false;
-            }
             return true;
         }
 
@@ -289,6 +244,8 @@ namespace Library.Forms
 
             PicCNOEmptyBasket.Visible = true;
             PicCNOFullBasket.Visible = false;
+
+
         }
 
         private void AddBtnResetForm()
@@ -324,7 +281,6 @@ namespace Library.Forms
         }
 
         #endregion
-
 
 
         #region CALC BOOK PRICE ON SELECTION OF BOOK COUNT
@@ -384,15 +340,68 @@ namespace Library.Forms
         #endregion
 
 
-
-
-        #region SUBMIT - CLEAR BUTTON FUNCTION
-
-        
-
+        #region ADD - SUBMIT - DELETE BUTTON FUNCTION
 
         private void BtnCNOSubmit_Click(object sender, EventArgs e)
         {
+
+            Order newOrder = new Order
+            {
+                CustomerId = _context.Customers.FirstOrDefault(c => c.FirstName + " " + c.LastName == CmbCNOCustomer.Text).Id,
+                CreatedOn = DateTime.Now,
+                TotalPrice = Convert.ToDecimal(LblCNOPriceNo.Text)
+            };
+
+            _context.Orders.Add(newOrder);
+            _context.SaveChanges();
+
+
+            
+            for (int i=0; i< DgvCNOBooks.Rows.Count - 1; i++)
+            {
+                
+                OrderItem orderItem = new OrderItem
+                {
+                    BookId = Convert.ToInt32(DgvCNOBooks.Rows[i].Cells[0].Value),
+                    Count = Convert.ToInt32(DgvCNOBooks.Rows[i].Cells[2].Value),
+                    Price = Convert.ToInt32(DgvCNOBooks.Rows[i].Cells[4].Value),
+                    ReturnDate = Convert.ToDateTime(DgvCNOBooks.Rows[i].Cells[3].Value),
+                    OrderId = newOrder.Id
+                    
+                };
+
+                _context.OrderItems.Add(orderItem);
+                _context.SaveChanges();
+
+                this.totalPrice = 0;
+                LblCNOPriceNo.Text = (this.totalPrice).ToString();
+
+            }
+
+            ResetForm();
+            DgvCNOBooks.Rows.Clear();
+            totalPrice = 0;
+
+            MessageBox.Show("Order is successfully created.", "New Order");
+
+            
+        }
+
+        private void BtnCNODelete_Click(object sender, EventArgs e)
+        {
+            if (DgvCNOBooks.SelectedRows.Count > 0)
+            {
+                DgvCNOBooks.Rows.RemoveAt(DgvCNOBooks.SelectedRows[0].Index);
+                LblCNOPriceNo.Text = (Convert.ToDecimal(LblCNOPriceNo.Text) - this.RemovedPrice).ToString();
+                this.totalPrice -= this.RemovedPrice;
+            }
+
+            BtnCNODelete.Visible = false;
+        }
+
+        private void BtnCNOAdd_Click(object sender, EventArgs e)
+        {
+
             if (!Validation())
             {
                 return;
@@ -403,61 +412,11 @@ namespace Library.Forms
                 return;
             }
 
-            //OrderItem order = new OrderItem
-            //{
-            //    O = DateCreate.Value,
-            //    CustomerId = _context.Customers.FirstOrDefault(c => c.FirstName + " " + c.LastName == CmbCNOCustomer.Text).Id,
-            //    BookId = _context.Books.FirstOrDefault(b => b.Name == CmbCNOBook.Text).Id,
-            //    Count = Convert.ToInt32(NumCNOCount.Value),
-            //    Price = Convert.ToDecimal(LblCNOPriceNo.Text),
-            //    ReturnDate = DateReturn.Value
-
-            //};
-
-            //SelectedBook.Count = SelectedBook.Count - order.Count;
-
-            //_context.OrderItems.Add(order);
-            //_context.SaveChanges();
-
-
-            FillOrderItemList();
-            ResetForm();
-           
-            MessageBox.Show("Order is successfully created.", "New Order");
-
-        }
-
-
-        #endregion
-
-        #endregion
-
-
-        private void BtnCNODelete_Click(object sender, EventArgs e)
-        {
-            if (DgvCNOBooks.SelectedRows.Count > 0)
-            {
-                DgvCNOBooks.Rows.RemoveAt(DgvCNOBooks.SelectedRows[0].Index);
-
-                LblCNOPriceNo.Text = (Convert.ToDecimal(LblCNOPriceNo.Text) - this.RemovedPrice).ToString();
-            }
-
-            BtnCNODelete.Visible = false;
-        }
-
-        private void BtnCNOAdd_Click(object sender, EventArgs e)
-        {
-            if (!ValidateBookCountAvailability())
-            {
-                return;
-            }
             PicCNOEmptyBasket.Visible = false;
             PicCNOFullBasket.Visible = true;
 
             var price = Convert.ToDecimal(TxtCNOPrice.Text);
 
-
-            
             DgvCNOBooks.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy";
 
             DgvCNOBooks.Rows.Add(SelectedBook.Id, SelectedBook.Name, NumCNOCount.Value, DateReturn.Value, price);
@@ -480,12 +439,52 @@ namespace Library.Forms
 
         }
 
+        #endregion
+
+
+        #region SELECT ROW FROM DGV
         private void DgvCNOBooks_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             this.RemovedPrice = Convert.ToDecimal(DgvCNOBooks.Rows[e.RowIndex].Cells[4].Value.ToString());
             BtnCNODelete.Visible = true;
 
         }
+
+
+
+        #endregion
+
+        #endregion
+
+
+
+        #region RETURN BOOK --- BUTTON
+
+        //private void BtnRBSearch_Click(object sender, EventArgs e)
+        //{
+        //    List<Library.Models.OrderItem> orderFind = _context.OrderItems.Where(o => o.Order.Customer.FirstName.Contains(TxtRBFirstName.Text) && o.Order.Customer.LastName.Contains(TxtRBLastName.Text) && o.Order.Customer.PhoneNumber.Contains(TxtRBPhoneNo.Text)).ToList();
+
+
+
+        //    MessageBox.Show(TxtRBFirstName.Text);
+
+
+        //    foreach (var item in orderFind)
+        //    {
+        //        DgvRBCustomer.Rows.Add(item.Id,
+        //                                item.Order.Customer.FirstName,
+        //                                item.Order.Customer.LastName,
+        //                                item.Book.Name,
+        //                                item.Count,
+        //                                item.ReturnDate,
+        //                                item.Price);
+        //    }
+        //}
+
+
+
+        #endregion
+
     }
 
 }

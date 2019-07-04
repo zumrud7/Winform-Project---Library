@@ -30,12 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PicLibrarian = new System.Windows.Forms.PictureBox();
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.metroContextMenu2 = new MetroFramework.Controls.MetroContextMenu(this.components);
@@ -60,17 +60,9 @@
             this.BtnReturnBook = new System.Windows.Forms.Button();
             this.BtnNewOrder = new System.Windows.Forms.Button();
             this.PnlNewOrder = new System.Windows.Forms.Panel();
+            this.LblCreateOrder = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.PnlCreateOrder = new System.Windows.Forms.Panel();
-            this.DgvCNOOrderList = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TxtCNOPrice = new System.Windows.Forms.TextBox();
             this.LblCNOPrice = new System.Windows.Forms.Label();
             this.BtnCNOAdd = new System.Windows.Forms.Button();
@@ -95,8 +87,36 @@
             this.LblCNOReturnDate = new System.Windows.Forms.Label();
             this.CmbCNOBook = new System.Windows.Forms.ComboBox();
             this.NumCNOCount = new System.Windows.Forms.NumericUpDown();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.LblCreateOrder = new System.Windows.Forms.Label();
+            this.PnlReturnBookBase = new System.Windows.Forms.Panel();
+            this.PnlReturnBook = new System.Windows.Forms.Panel();
+            this.BtnRBReturnBook = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.metroDateTime1 = new MetroFramework.Controls.MetroDateTime();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.TxtRBBookName = new System.Windows.Forms.TextBox();
+            this.LblRBReturnDate = new System.Windows.Forms.Label();
+            this.LblRBCount = new System.Windows.Forms.Label();
+            this.LblRBBookName = new System.Windows.Forms.Label();
+            this.TxtRBPhoneNo = new System.Windows.Forms.TextBox();
+            this.LblRBPhoneNo = new System.Windows.Forms.Label();
+            this.TxtRBLastName = new System.Windows.Forms.TextBox();
+            this.LblRBLastName = new System.Windows.Forms.Label();
+            this.TxtRBFirstName = new System.Windows.Forms.TextBox();
+            this.BtnRBSearch = new System.Windows.Forms.Button();
+            this.DgvRBCustomer = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LblRBFirstName = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.LblReturnBook = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PicLibrarian)).BeginInit();
             this.metroContextMenu2.SuspendLayout();
             this.metroContextMenu3.SuspendLayout();
@@ -106,14 +126,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.PnlOrders.SuspendLayout();
             this.PnlNewOrder.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.PnlCreateOrder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvCNOOrderList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCNOBooks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCNOFullBasket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCNOEmptyBasket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumCNOCount)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.PnlReturnBookBase.SuspendLayout();
+            this.PnlReturnBook.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRBCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // PicLibrarian
@@ -405,22 +430,40 @@
             // 
             // PnlNewOrder
             // 
-            this.PnlNewOrder.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.PnlNewOrder.Controls.Add(this.PnlCreateOrder);
-            this.PnlNewOrder.Controls.Add(this.pictureBox4);
+            this.PnlNewOrder.Controls.Add(this.PnlReturnBookBase);
             this.PnlNewOrder.Controls.Add(this.LblCreateOrder);
-            this.PnlNewOrder.Location = new System.Drawing.Point(355, 280);
+            this.PnlNewOrder.Controls.Add(this.pictureBox4);
+            this.PnlNewOrder.Controls.Add(this.PnlCreateOrder);
+            this.PnlNewOrder.Location = new System.Drawing.Point(354, 274);
             this.PnlNewOrder.Name = "PnlNewOrder";
             this.PnlNewOrder.Size = new System.Drawing.Size(1045, 811);
             this.PnlNewOrder.TabIndex = 16;
             this.PnlNewOrder.Visible = false;
             // 
+            // LblCreateOrder
+            // 
+            this.LblCreateOrder.AutoSize = true;
+            this.LblCreateOrder.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCreateOrder.Location = new System.Drawing.Point(147, 53);
+            this.LblCreateOrder.Name = "LblCreateOrder";
+            this.LblCreateOrder.Size = new System.Drawing.Size(453, 51);
+            this.LblCreateOrder.TabIndex = 22;
+            this.LblCreateOrder.Text = "CREATE A NEW ORDER";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(31, 20);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(110, 106);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 21;
+            this.pictureBox4.TabStop = false;
+            // 
             // PnlCreateOrder
             // 
             this.PnlCreateOrder.BackColor = System.Drawing.Color.MintCream;
             this.PnlCreateOrder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PnlCreateOrder.Controls.Add(this.DgvCNOOrderList);
             this.PnlCreateOrder.Controls.Add(this.TxtCNOPrice);
             this.PnlCreateOrder.Controls.Add(this.LblCNOPrice);
             this.PnlCreateOrder.Controls.Add(this.BtnCNOAdd);
@@ -440,120 +483,10 @@
             this.PnlCreateOrder.Controls.Add(this.LblCNOReturnDate);
             this.PnlCreateOrder.Controls.Add(this.CmbCNOBook);
             this.PnlCreateOrder.Controls.Add(this.NumCNOCount);
-            this.PnlCreateOrder.Location = new System.Drawing.Point(37, 133);
+            this.PnlCreateOrder.Location = new System.Drawing.Point(31, 143);
             this.PnlCreateOrder.Name = "PnlCreateOrder";
             this.PnlCreateOrder.Size = new System.Drawing.Size(980, 665);
-            this.PnlCreateOrder.TabIndex = 16;
-            // 
-            // DgvCNOOrderList
-            // 
-            this.DgvCNOOrderList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DgvCNOOrderList.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.DgvCNOOrderList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvCNOOrderList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.DgvCNOOrderList.ColumnHeadersHeight = 40;
-            this.DgvCNOOrderList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column6,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column7,
-            this.Column8,
-            this.Column10});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvCNOOrderList.DefaultCellStyle = dataGridViewCellStyle8;
-            this.DgvCNOOrderList.EnableHeadersVisualStyles = false;
-            this.DgvCNOOrderList.Location = new System.Drawing.Point(-1, 565);
-            this.DgvCNOOrderList.Name = "DgvCNOOrderList";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvCNOOrderList.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.DgvCNOOrderList.RowHeadersWidth = 62;
-            this.DgvCNOOrderList.RowTemplate.Height = 28;
-            this.DgvCNOOrderList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvCNOOrderList.Size = new System.Drawing.Size(980, 95);
-            this.DgvCNOOrderList.TabIndex = 17;
-            this.DgvCNOOrderList.Visible = false;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Visible = false;
-            // 
-            // Column6
-            // 
-            this.Column6.FillWeight = 150F;
-            this.Column6.HeaderText = "Create Date";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "CustomerId";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Visible = false;
-            // 
-            // Column3
-            // 
-            this.Column3.FillWeight = 170F;
-            this.Column3.HeaderText = "Customer";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "BookId";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.Visible = false;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Book";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Count";
-            this.Column7.MinimumWidth = 8;
-            this.Column7.Name = "Column7";
-            // 
-            // Column8
-            // 
-            this.Column8.FillWeight = 150F;
-            this.Column8.HeaderText = "Return Date";
-            this.Column8.MinimumWidth = 8;
-            this.Column8.Name = "Column8";
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Price";
-            this.Column10.MinimumWidth = 8;
-            this.Column10.Name = "Column10";
+            this.PnlCreateOrder.TabIndex = 20;
             // 
             // TxtCNOPrice
             // 
@@ -581,13 +514,12 @@
             this.BtnCNOAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCNOAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCNOAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnCNOAdd.Location = new System.Drawing.Point(810, 135);
+            this.BtnCNOAdd.Location = new System.Drawing.Point(796, 132);
             this.BtnCNOAdd.Name = "BtnCNOAdd";
             this.BtnCNOAdd.Size = new System.Drawing.Size(141, 61);
             this.BtnCNOAdd.TabIndex = 28;
             this.BtnCNOAdd.Text = "ADD";
             this.BtnCNOAdd.UseVisualStyleBackColor = false;
-            this.BtnCNOAdd.Click += new System.EventHandler(this.BtnCNOAdd_Click);
             // 
             // BtnCNODelete
             // 
@@ -597,28 +529,27 @@
             this.BtnCNODelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCNODelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCNODelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnCNODelete.Location = new System.Drawing.Point(820, 497);
+            this.BtnCNODelete.Location = new System.Drawing.Point(824, 548);
             this.BtnCNODelete.Name = "BtnCNODelete";
             this.BtnCNODelete.Size = new System.Drawing.Size(141, 61);
             this.BtnCNODelete.TabIndex = 27;
             this.BtnCNODelete.Text = "REMOVE";
             this.BtnCNODelete.UseVisualStyleBackColor = false;
             this.BtnCNODelete.Visible = false;
-            this.BtnCNODelete.Click += new System.EventHandler(this.BtnCNODelete_Click);
             // 
             // DgvCNOBooks
             // 
             this.DgvCNOBooks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DgvCNOBooks.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.DgvCNOBooks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvCNOBooks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvCNOBooks.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DgvCNOBooks.ColumnHeadersHeight = 32;
             this.DgvCNOBooks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column11,
@@ -626,31 +557,30 @@
             this.Column12,
             this.Column13,
             this.Column14});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvCNOBooks.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvCNOBooks.DefaultCellStyle = dataGridViewCellStyle5;
             this.DgvCNOBooks.EnableHeadersVisualStyles = false;
             this.DgvCNOBooks.Location = new System.Drawing.Point(215, 278);
             this.DgvCNOBooks.Name = "DgvCNOBooks";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvCNOBooks.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvCNOBooks.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.DgvCNOBooks.RowHeadersWidth = 62;
             this.DgvCNOBooks.RowTemplate.Height = 28;
             this.DgvCNOBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvCNOBooks.Size = new System.Drawing.Size(584, 331);
             this.DgvCNOBooks.TabIndex = 26;
-            this.DgvCNOBooks.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvCNOBooks_RowHeaderMouseClick);
             // 
             // Column11
             // 
@@ -746,13 +676,12 @@
             this.BtnCNOSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCNOSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCNOSubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnCNOSubmit.Location = new System.Drawing.Point(820, 564);
+            this.BtnCNOSubmit.Location = new System.Drawing.Point(824, 548);
             this.BtnCNOSubmit.Name = "BtnCNOSubmit";
             this.BtnCNOSubmit.Size = new System.Drawing.Size(141, 61);
             this.BtnCNOSubmit.TabIndex = 16;
             this.BtnCNOSubmit.Text = "SUBMIT";
             this.BtnCNOSubmit.UseVisualStyleBackColor = false;
-            this.BtnCNOSubmit.Click += new System.EventHandler(this.BtnCNOSubmit_Click);
             // 
             // DateReturn
             // 
@@ -768,7 +697,6 @@
             this.DateReturn.TabIndex = 15;
             this.DateReturn.UseCustomBackColor = true;
             this.DateReturn.UseCustomForeColor = true;
-            this.DateReturn.ValueChanged += new System.EventHandler(this.DateReturn_ValueChanged);
             // 
             // LblCNOCustomer
             // 
@@ -835,7 +763,6 @@
             this.CmbCNOBook.Name = "CmbCNOBook";
             this.CmbCNOBook.Size = new System.Drawing.Size(165, 33);
             this.CmbCNOBook.TabIndex = 8;
-            this.CmbCNOBook.SelectedIndexChanged += new System.EventHandler(this.CmbCNOBook_SelectedIndexChanged);
             // 
             // NumCNOCount
             // 
@@ -849,27 +776,340 @@
             0,
             0,
             0});
-            this.NumCNOCount.ValueChanged += new System.EventHandler(this.NumCNOCount_ValueChanged);
             // 
-            // pictureBox4
+            // PnlReturnBookBase
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(37, 8);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(110, 106);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            this.PnlReturnBookBase.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.PnlReturnBookBase.Controls.Add(this.PnlReturnBook);
+            this.PnlReturnBookBase.Controls.Add(this.pictureBox6);
+            this.PnlReturnBookBase.Controls.Add(this.LblReturnBook);
+            this.PnlReturnBookBase.Location = new System.Drawing.Point(0, 3);
+            this.PnlReturnBookBase.Name = "PnlReturnBookBase";
+            this.PnlReturnBookBase.Size = new System.Drawing.Size(1045, 811);
+            this.PnlReturnBookBase.TabIndex = 26;
             // 
-            // LblCreateOrder
+            // PnlReturnBook
             // 
-            this.LblCreateOrder.AutoSize = true;
-            this.LblCreateOrder.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCreateOrder.Location = new System.Drawing.Point(153, 39);
-            this.LblCreateOrder.Name = "LblCreateOrder";
-            this.LblCreateOrder.Size = new System.Drawing.Size(453, 51);
-            this.LblCreateOrder.TabIndex = 0;
-            this.LblCreateOrder.Text = "CREATE A NEW ORDER";
+            this.PnlReturnBook.BackColor = System.Drawing.Color.MintCream;
+            this.PnlReturnBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlReturnBook.Controls.Add(this.BtnRBReturnBook);
+            this.PnlReturnBook.Controls.Add(this.label2);
+            this.PnlReturnBook.Controls.Add(this.label3);
+            this.PnlReturnBook.Controls.Add(this.pictureBox5);
+            this.PnlReturnBook.Controls.Add(this.metroDateTime1);
+            this.PnlReturnBook.Controls.Add(this.numericUpDown1);
+            this.PnlReturnBook.Controls.Add(this.TxtRBBookName);
+            this.PnlReturnBook.Controls.Add(this.LblRBReturnDate);
+            this.PnlReturnBook.Controls.Add(this.LblRBCount);
+            this.PnlReturnBook.Controls.Add(this.LblRBBookName);
+            this.PnlReturnBook.Controls.Add(this.TxtRBPhoneNo);
+            this.PnlReturnBook.Controls.Add(this.LblRBPhoneNo);
+            this.PnlReturnBook.Controls.Add(this.TxtRBLastName);
+            this.PnlReturnBook.Controls.Add(this.LblRBLastName);
+            this.PnlReturnBook.Controls.Add(this.TxtRBFirstName);
+            this.PnlReturnBook.Controls.Add(this.BtnRBSearch);
+            this.PnlReturnBook.Controls.Add(this.DgvRBCustomer);
+            this.PnlReturnBook.Controls.Add(this.LblRBFirstName);
+            this.PnlReturnBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PnlReturnBook.Location = new System.Drawing.Point(37, 133);
+            this.PnlReturnBook.Name = "PnlReturnBook";
+            this.PnlReturnBook.Size = new System.Drawing.Size(980, 665);
+            this.PnlReturnBook.TabIndex = 16;
+            // 
+            // BtnRBReturnBook
+            // 
+            this.BtnRBReturnBook.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BtnRBReturnBook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnRBReturnBook.FlatAppearance.BorderSize = 0;
+            this.BtnRBReturnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRBReturnBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRBReturnBook.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnRBReturnBook.Location = new System.Drawing.Point(105, 550);
+            this.BtnRBReturnBook.Name = "BtnRBReturnBook";
+            this.BtnRBReturnBook.Size = new System.Drawing.Size(574, 70);
+            this.BtnRBReturnBook.TabIndex = 46;
+            this.BtnRBReturnBook.Text = "RETURN BOOK";
+            this.BtnRBReturnBook.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(781, 560);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 51);
+            this.label2.TabIndex = 45;
+            this.label2.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(780, 497);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 51);
+            this.label3.TabIndex = 44;
+            this.label3.Text = "AZN";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(790, 395);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(80, 82);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 43;
+            this.pictureBox5.TabStop = false;
+            // 
+            // metroDateTime1
+            // 
+            this.metroDateTime1.CalendarFont = new System.Drawing.Font("Microsoft Tai Le", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.metroDateTime1.CalendarForeColor = System.Drawing.SystemColors.Desktop;
+            this.metroDateTime1.CustomFormat = "dd-MM-yyyy";
+            this.metroDateTime1.FontSize = MetroFramework.MetroDateTimeSize.Small;
+            this.metroDateTime1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.metroDateTime1.Location = new System.Drawing.Point(518, 459);
+            this.metroDateTime1.MinimumSize = new System.Drawing.Size(0, 25);
+            this.metroDateTime1.Name = "metroDateTime1";
+            this.metroDateTime1.Size = new System.Drawing.Size(161, 30);
+            this.metroDateTime1.TabIndex = 42;
+            this.metroDateTime1.UseCustomBackColor = true;
+            this.metroDateTime1.UseCustomForeColor = true;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(360, 459);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(107, 30);
+            this.numericUpDown1.TabIndex = 40;
+            // 
+            // TxtRBBookName
+            // 
+            this.TxtRBBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRBBookName.Location = new System.Drawing.Point(105, 459);
+            this.TxtRBBookName.Name = "TxtRBBookName";
+            this.TxtRBBookName.Size = new System.Drawing.Size(201, 30);
+            this.TxtRBBookName.TabIndex = 39;
+            // 
+            // LblRBReturnDate
+            // 
+            this.LblRBReturnDate.AutoSize = true;
+            this.LblRBReturnDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRBReturnDate.Location = new System.Drawing.Point(513, 419);
+            this.LblRBReturnDate.Name = "LblRBReturnDate";
+            this.LblRBReturnDate.Size = new System.Drawing.Size(133, 25);
+            this.LblRBReturnDate.TabIndex = 38;
+            this.LblRBReturnDate.Text = "Return Date:";
+            // 
+            // LblRBCount
+            // 
+            this.LblRBCount.AutoSize = true;
+            this.LblRBCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRBCount.Location = new System.Drawing.Point(355, 419);
+            this.LblRBCount.Name = "LblRBCount";
+            this.LblRBCount.Size = new System.Drawing.Size(77, 25);
+            this.LblRBCount.TabIndex = 37;
+            this.LblRBCount.Text = "Count:";
+            // 
+            // LblRBBookName
+            // 
+            this.LblRBBookName.AutoSize = true;
+            this.LblRBBookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRBBookName.Location = new System.Drawing.Point(100, 419);
+            this.LblRBBookName.Name = "LblRBBookName";
+            this.LblRBBookName.Size = new System.Drawing.Size(130, 25);
+            this.LblRBBookName.TabIndex = 36;
+            this.LblRBBookName.Text = "Book Name:";
+            // 
+            // TxtRBPhoneNo
+            // 
+            this.TxtRBPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRBPhoneNo.Location = new System.Drawing.Point(565, 70);
+            this.TxtRBPhoneNo.Name = "TxtRBPhoneNo";
+            this.TxtRBPhoneNo.Size = new System.Drawing.Size(180, 30);
+            this.TxtRBPhoneNo.TabIndex = 35;
+            // 
+            // LblRBPhoneNo
+            // 
+            this.LblRBPhoneNo.AutoSize = true;
+            this.LblRBPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRBPhoneNo.Location = new System.Drawing.Point(560, 28);
+            this.LblRBPhoneNo.Name = "LblRBPhoneNo";
+            this.LblRBPhoneNo.Size = new System.Drawing.Size(162, 25);
+            this.LblRBPhoneNo.TabIndex = 34;
+            this.LblRBPhoneNo.Text = "Phone Number:";
+            // 
+            // TxtRBLastName
+            // 
+            this.TxtRBLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRBLastName.Location = new System.Drawing.Point(305, 70);
+            this.TxtRBLastName.Name = "TxtRBLastName";
+            this.TxtRBLastName.Size = new System.Drawing.Size(180, 30);
+            this.TxtRBLastName.TabIndex = 33;
+            // 
+            // LblRBLastName
+            // 
+            this.LblRBLastName.AutoSize = true;
+            this.LblRBLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRBLastName.Location = new System.Drawing.Point(300, 28);
+            this.LblRBLastName.Name = "LblRBLastName";
+            this.LblRBLastName.Size = new System.Drawing.Size(122, 25);
+            this.LblRBLastName.TabIndex = 32;
+            this.LblRBLastName.Text = "Last Name:";
+            // 
+            // TxtRBFirstName
+            // 
+            this.TxtRBFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRBFirstName.Location = new System.Drawing.Point(50, 70);
+            this.TxtRBFirstName.Name = "TxtRBFirstName";
+            this.TxtRBFirstName.Size = new System.Drawing.Size(180, 30);
+            this.TxtRBFirstName.TabIndex = 31;
+            // 
+            // BtnRBSearch
+            // 
+            this.BtnRBSearch.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.BtnRBSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnRBSearch.FlatAppearance.BorderSize = 0;
+            this.BtnRBSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRBSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnRBSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnRBSearch.Location = new System.Drawing.Point(809, 39);
+            this.BtnRBSearch.Name = "BtnRBSearch";
+            this.BtnRBSearch.Size = new System.Drawing.Size(141, 61);
+            this.BtnRBSearch.TabIndex = 28;
+            this.BtnRBSearch.Text = "SEARCH";
+            this.BtnRBSearch.UseVisualStyleBackColor = false;
+            // 
+            // DgvRBCustomer
+            // 
+            this.DgvRBCustomer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvRBCustomer.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DgvRBCustomer.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvRBCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DgvRBCustomer.ColumnHeadersHeight = 32;
+            this.DgvRBCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.Column5,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn5,
+            this.Column1,
+            this.Column2,
+            this.Column3});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvRBCustomer.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DgvRBCustomer.EnableHeadersVisualStyles = false;
+            this.DgvRBCustomer.Location = new System.Drawing.Point(50, 144);
+            this.DgvRBCustomer.Name = "DgvRBCustomer";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvRBCustomer.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.DgvRBCustomer.RowHeadersWidth = 62;
+            this.DgvRBCustomer.RowTemplate.Height = 28;
+            this.DgvRBCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvRBCustomer.Size = new System.Drawing.Size(900, 200);
+            this.DgvRBCustomer.TabIndex = 26;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "CustomerId";
+            this.Column5.MinimumWidth = 8;
+            this.Column5.Name = "Column5";
+            this.Column5.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "First Name";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Last Name";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Book";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Count";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 130F;
+            this.Column2.HeaderText = "Return Date";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Price";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            // 
+            // LblRBFirstName
+            // 
+            this.LblRBFirstName.AutoSize = true;
+            this.LblRBFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRBFirstName.Location = new System.Drawing.Point(45, 28);
+            this.LblRBFirstName.Name = "LblRBFirstName";
+            this.LblRBFirstName.Size = new System.Drawing.Size(123, 25);
+            this.LblRBFirstName.TabIndex = 2;
+            this.LblRBFirstName.Text = "First Name:";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(37, 8);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(110, 106);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // LblReturnBook
+            // 
+            this.LblReturnBook.AutoSize = true;
+            this.LblReturnBook.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblReturnBook.Location = new System.Drawing.Point(153, 39);
+            this.LblReturnBook.Name = "LblReturnBook";
+            this.LblReturnBook.Size = new System.Drawing.Size(341, 51);
+            this.LblReturnBook.TabIndex = 0;
+            this.LblReturnBook.Text = "RETURN A BOOK";
             // 
             // Dashboard
             // 
@@ -903,15 +1143,22 @@
             this.PnlOrders.ResumeLayout(false);
             this.PnlNewOrder.ResumeLayout(false);
             this.PnlNewOrder.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.PnlCreateOrder.ResumeLayout(false);
             this.PnlCreateOrder.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvCNOOrderList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCNOBooks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCNOFullBasket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicCNOEmptyBasket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumCNOCount)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.PnlReturnBookBase.ResumeLayout(false);
+            this.PnlReturnBookBase.PerformLayout();
+            this.PnlReturnBook.ResumeLayout(false);
+            this.PnlReturnBook.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvRBCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -943,42 +1190,62 @@
         private System.Windows.Forms.Label LblHome;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel PnlNewOrder;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label LblCreateOrder;
-        private System.Windows.Forms.Label LblCNOCustomer;
-        private System.Windows.Forms.Label LblCNOBook;
-        private System.Windows.Forms.Label LblCNOReturnDate;
-        private System.Windows.Forms.ComboBox CmbCNOBook;
-        private System.Windows.Forms.ComboBox CmbCNOCustomer;
-        private System.Windows.Forms.Label LblCNOCount;
         private System.Windows.Forms.Panel PnlCreateOrder;
-        private MetroFramework.Controls.MetroDateTime DateReturn;
-        private System.Windows.Forms.Button BtnCNOSubmit;
-        private System.Windows.Forms.DataGridView DgvCNOOrderList;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox PicCNOFullBasket;
-        private System.Windows.Forms.PictureBox PicCNOEmptyBasket;
-        private System.Windows.Forms.Label LblCNOPriceNo;
-        private System.Windows.Forms.Label LblCNOTotalPrice;
-        private System.Windows.Forms.DataGridView DgvCNOBooks;
-        private System.Windows.Forms.Button BtnCNODelete;
-        private System.Windows.Forms.NumericUpDown NumCNOCount;
-        private System.Windows.Forms.Button BtnCNOAdd;
         private System.Windows.Forms.TextBox TxtCNOPrice;
         private System.Windows.Forms.Label LblCNOPrice;
+        private System.Windows.Forms.Button BtnCNOAdd;
+        private System.Windows.Forms.Button BtnCNODelete;
+        private System.Windows.Forms.DataGridView DgvCNOBooks;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.Label LblCNOPriceNo;
+        private System.Windows.Forms.Label LblCNOTotalPrice;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox PicCNOFullBasket;
+        private System.Windows.Forms.PictureBox PicCNOEmptyBasket;
+        private System.Windows.Forms.Button BtnCNOSubmit;
+        private MetroFramework.Controls.MetroDateTime DateReturn;
+        private System.Windows.Forms.Label LblCNOCustomer;
+        private System.Windows.Forms.Label LblCNOBook;
+        private System.Windows.Forms.Label LblCNOCount;
+        private System.Windows.Forms.ComboBox CmbCNOCustomer;
+        private System.Windows.Forms.Label LblCNOReturnDate;
+        private System.Windows.Forms.ComboBox CmbCNOBook;
+        private System.Windows.Forms.NumericUpDown NumCNOCount;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label LblCreateOrder;
+        private System.Windows.Forms.Panel PnlReturnBookBase;
+        private System.Windows.Forms.Panel PnlReturnBook;
+        private System.Windows.Forms.Button BtnRBReturnBook;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private MetroFramework.Controls.MetroDateTime metroDateTime1;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox TxtRBBookName;
+        private System.Windows.Forms.Label LblRBReturnDate;
+        private System.Windows.Forms.Label LblRBCount;
+        private System.Windows.Forms.Label LblRBBookName;
+        private System.Windows.Forms.TextBox TxtRBPhoneNo;
+        private System.Windows.Forms.Label LblRBPhoneNo;
+        private System.Windows.Forms.TextBox TxtRBLastName;
+        private System.Windows.Forms.Label LblRBLastName;
+        private System.Windows.Forms.TextBox TxtRBFirstName;
+        private System.Windows.Forms.Button BtnRBSearch;
+        private System.Windows.Forms.DataGridView DgvRBCustomer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.Label LblRBFirstName;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label LblReturnBook;
     }
 }
