@@ -27,6 +27,9 @@ namespace Library.Models
         [Required]
         public DateTime ReturnDate { get; set; }
 
+
+        public bool isCompleted { get; set; } = false;
+
         [Required]
         public int OrderId { get; set; }
 

@@ -37,7 +37,6 @@ C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Librar
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.csproj.CopyComplete
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.exe
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.pdb
-C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Account.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Book.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Customer.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.User.resources
@@ -52,3 +51,7 @@ C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Librar
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.OrderTblAddedInContext.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Test.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Report.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.IsCompletedColumnAddedToOrderItemTbl.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.DefaultValueFalseAddedtoIsCompletedColumn.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.NewFOrmForTest.resources

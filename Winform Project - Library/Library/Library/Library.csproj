@@ -63,11 +63,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\LibraryContext.cs" />
-    <Compile Include="Forms\Account.cs">
+    <Compile Include="Forms\NewFOrmForTest.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Account.Designer.cs">
-      <DependentUpon>Account.cs</DependentUpon>
+    <Compile Include="Forms\NewFOrmForTest.Designer.cs">
+      <DependentUpon>NewFOrmForTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Book.cs">
       <SubType>Form</SubType>
@@ -145,6 +151,14 @@
     <Compile Include="Migrations\201907032041341_OrderTblAddedInContext.Designer.cs">
       <DependentUpon>201907032041341_OrderTblAddedInContext.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907051118544_IsCompletedColumnAddedToOrderItemTbl.cs" />
+    <Compile Include="Migrations\201907051118544_IsCompletedColumnAddedToOrderItemTbl.Designer.cs">
+      <DependentUpon>201907051118544_IsCompletedColumnAddedToOrderItemTbl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907051122039_DefaultValueFalseAddedtoIsCompletedColumn.cs" />
+    <Compile Include="Migrations\201907051122039_DefaultValueFalseAddedtoIsCompletedColumn.Designer.cs">
+      <DependentUpon>201907051122039_DefaultValueFalseAddedtoIsCompletedColumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\ComboboxDate.cs" />
@@ -154,8 +168,11 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Account.resx">
-      <DependentUpon>Account.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\NewFOrmForTest.resx">
+      <DependentUpon>NewFOrmForTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Book.resx">
       <DependentUpon>Book.cs</DependentUpon>
@@ -204,6 +221,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907032041341_OrderTblAddedInContext.resx">
       <DependentUpon>201907032041341_OrderTblAddedInContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907051118544_IsCompletedColumnAddedToOrderItemTbl.resx">
+      <DependentUpon>201907051118544_IsCompletedColumnAddedToOrderItemTbl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907051122039_DefaultValueFalseAddedtoIsCompletedColumn.resx">
+      <DependentUpon>201907051122039_DefaultValueFalseAddedtoIsCompletedColumn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
