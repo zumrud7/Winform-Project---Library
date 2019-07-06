@@ -36,15 +36,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PicLibrarian = new System.Windows.Forms.PictureBox();
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.metroContextMenu2 = new MetroFramework.Controls.MetroContextMenu(this.components);
@@ -54,6 +54,7 @@
             this.LblUserName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.LblHome = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.BtnAccount = new System.Windows.Forms.Button();
@@ -95,7 +96,6 @@
             this.LblCNOReturnDate = new System.Windows.Forms.Label();
             this.CmbCNOBook = new System.Windows.Forms.ComboBox();
             this.NumCNOCount = new System.Windows.Forms.NumericUpDown();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.PnlReturnBook = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.BtnRBReturnBook = new System.Windows.Forms.Button();
@@ -127,34 +127,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.LblReturnBook = new System.Windows.Forms.Label();
             this.PnlTrackOrders = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.LblTOTitle = new System.Windows.Forms.Label();
-            this.BtnToday = new System.Windows.Forms.Button();
-            this.PnlTOButtons = new System.Windows.Forms.Panel();
-            this.BtnTomorrow = new System.Windows.Forms.Button();
-            this.BtnDelayed = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.PnlToday = new System.Windows.Forms.Panel();
-            this.DgvTOTodayOrderList = new System.Windows.Forms.DataGridView();
-            this.PnlTODelayed = new System.Windows.Forms.Panel();
-            this.DgvTODelayedOrderList = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PnlTOTomorrowOrderList = new System.Windows.Forms.Panel();
             this.DgvTOTomorrowOrderList = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -164,6 +136,30 @@
             this.dataGridViewTextBoxColumn25 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn26 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn27 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DgvTODelayedOrderList = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DgvTOTodayOrderList = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BtnTomorrow = new System.Windows.Forms.Button();
+            this.BtnDelayed = new System.Windows.Forms.Button();
+            this.BtnToday = new System.Windows.Forms.Button();
+            this.LblTOTitle = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.PnlDGVHolder = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PicLibrarian)).BeginInit();
             this.metroContextMenu2.SuspendLayout();
             this.metroContextMenu3.SuspendLayout();
@@ -186,14 +182,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.DgvRBCustomer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.PnlTrackOrders.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.PnlTOButtons.SuspendLayout();
-            this.PnlToday.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvTOTodayOrderList)).BeginInit();
-            this.PnlTODelayed.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvTODelayedOrderList)).BeginInit();
-            this.PnlTOTomorrowOrderList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvTOTomorrowOrderList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvTODelayedOrderList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvTOTodayOrderList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.PnlDGVHolder.SuspendLayout();
             this.SuspendLayout();
             // 
             // PicLibrarian
@@ -274,6 +267,14 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1882, 147);
             this.panel1.TabIndex = 9;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.DarkRed;
+            this.panel2.Location = new System.Drawing.Point(345, 155);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.TabIndex = 19;
             // 
             // LblHome
             // 
@@ -445,7 +446,7 @@
             this.BtnReturnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnReturnBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnReturnBook.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BtnReturnBook.Location = new System.Drawing.Point(23, 544);
+            this.BtnReturnBook.Location = new System.Drawing.Point(23, 543);
             this.BtnReturnBook.Name = "BtnReturnBook";
             this.BtnReturnBook.Size = new System.Drawing.Size(325, 266);
             this.BtnReturnBook.TabIndex = 18;
@@ -738,7 +739,7 @@
             this.DateReturn.FontSize = MetroFramework.MetroDateTimeSize.Small;
             this.DateReturn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DateReturn.Location = new System.Drawing.Point(428, 160);
-            this.DateReturn.MinimumSize = new System.Drawing.Size(0, 25);
+            this.DateReturn.MinimumSize = new System.Drawing.Size(4, 25);
             this.DateReturn.Name = "DateReturn";
             this.DateReturn.Size = new System.Drawing.Size(161, 26);
             this.DateReturn.TabIndex = 15;
@@ -826,14 +827,6 @@
             0,
             0});
             this.NumCNOCount.ValueChanged += new System.EventHandler(this.NumCNOCount_ValueChanged);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DarkRed;
-            this.panel2.Location = new System.Drawing.Point(345, 155);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
-            this.panel2.TabIndex = 19;
             // 
             // PnlReturnBook
             // 
@@ -929,7 +922,7 @@
             this.DPRBReturn.FontSize = MetroFramework.MetroDateTimeSize.Small;
             this.DPRBReturn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DPRBReturn.Location = new System.Drawing.Point(520, 483);
-            this.DPRBReturn.MinimumSize = new System.Drawing.Size(0, 25);
+            this.DPRBReturn.MinimumSize = new System.Drawing.Size(4, 25);
             this.DPRBReturn.Name = "DPRBReturn";
             this.DPRBReturn.Size = new System.Drawing.Size(161, 30);
             this.DPRBReturn.TabIndex = 42;
@@ -1184,10 +1177,10 @@
             // PnlTrackOrders
             // 
             this.PnlTrackOrders.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.PnlTrackOrders.Controls.Add(this.PnlTOTomorrowOrderList);
-            this.PnlTrackOrders.Controls.Add(this.PnlTODelayed);
-            this.PnlTrackOrders.Controls.Add(this.PnlToday);
-            this.PnlTrackOrders.Controls.Add(this.PnlTOButtons);
+            this.PnlTrackOrders.Controls.Add(this.PnlDGVHolder);
+            this.PnlTrackOrders.Controls.Add(this.BtnTomorrow);
+            this.PnlTrackOrders.Controls.Add(this.BtnToday);
+            this.PnlTrackOrders.Controls.Add(this.BtnDelayed);
             this.PnlTrackOrders.Controls.Add(this.LblTOTitle);
             this.PnlTrackOrders.Controls.Add(this.pictureBox5);
             this.PnlTrackOrders.Location = new System.Drawing.Point(357, 278);
@@ -1196,163 +1189,11 @@
             this.PnlTrackOrders.TabIndex = 21;
             this.PnlTrackOrders.Visible = false;
             // 
-            // pictureBox5
+            // DgvTOTomorrowOrderList
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(16, 13);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(110, 106);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            // 
-            // LblTOTitle
-            // 
-            this.LblTOTitle.AutoSize = true;
-            this.LblTOTitle.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTOTitle.Location = new System.Drawing.Point(131, 44);
-            this.LblTOTitle.Name = "LblTOTitle";
-            this.LblTOTitle.Size = new System.Drawing.Size(316, 51);
-            this.LblTOTitle.TabIndex = 3;
-            this.LblTOTitle.Text = "TRACK ORDERS";
-            // 
-            // BtnToday
-            // 
-            this.BtnToday.BackColor = System.Drawing.Color.Gold;
-            this.BtnToday.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnToday.FlatAppearance.BorderSize = 0;
-            this.BtnToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnToday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnToday.Location = new System.Drawing.Point(330, 1);
-            this.BtnToday.Name = "BtnToday";
-            this.BtnToday.Size = new System.Drawing.Size(320, 55);
-            this.BtnToday.TabIndex = 29;
-            this.BtnToday.Text = "TODAY";
-            this.BtnToday.UseVisualStyleBackColor = false;
-            this.BtnToday.Click += new System.EventHandler(this.BtnToday_Click);
-            // 
-            // PnlTOButtons
-            // 
-            this.PnlTOButtons.Controls.Add(this.panel4);
-            this.PnlTOButtons.Controls.Add(this.BtnTomorrow);
-            this.PnlTOButtons.Controls.Add(this.BtnDelayed);
-            this.PnlTOButtons.Controls.Add(this.BtnToday);
-            this.PnlTOButtons.Location = new System.Drawing.Point(34, 168);
-            this.PnlTOButtons.Name = "PnlTOButtons";
-            this.PnlTOButtons.Size = new System.Drawing.Size(979, 61);
-            this.PnlTOButtons.TabIndex = 30;
-            // 
-            // BtnTomorrow
-            // 
-            this.BtnTomorrow.BackColor = System.Drawing.Color.YellowGreen;
-            this.BtnTomorrow.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnTomorrow.FlatAppearance.BorderSize = 0;
-            this.BtnTomorrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnTomorrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTomorrow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnTomorrow.Location = new System.Drawing.Point(656, 1);
-            this.BtnTomorrow.Name = "BtnTomorrow";
-            this.BtnTomorrow.Size = new System.Drawing.Size(320, 55);
-            this.BtnTomorrow.TabIndex = 30;
-            this.BtnTomorrow.Text = "TOMORROW";
-            this.BtnTomorrow.UseVisualStyleBackColor = false;
-            this.BtnTomorrow.Click += new System.EventHandler(this.BtnTomorrow_Click);
-            // 
-            // BtnDelayed
-            // 
-            this.BtnDelayed.BackColor = System.Drawing.Color.Crimson;
-            this.BtnDelayed.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnDelayed.FlatAppearance.BorderSize = 0;
-            this.BtnDelayed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDelayed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDelayed.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BtnDelayed.Location = new System.Drawing.Point(4, 1);
-            this.BtnDelayed.Name = "BtnDelayed";
-            this.BtnDelayed.Size = new System.Drawing.Size(320, 55);
-            this.BtnDelayed.TabIndex = 31;
-            this.BtnDelayed.Text = "DELAYED";
-            this.BtnDelayed.UseVisualStyleBackColor = false;
-            this.BtnDelayed.Click += new System.EventHandler(this.BtnDelayed_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(0, 58);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(979, 534);
-            this.panel4.TabIndex = 31;
-            // 
-            // PnlToday
-            // 
-            this.PnlToday.Controls.Add(this.DgvTOTodayOrderList);
-            this.PnlToday.Location = new System.Drawing.Point(36, 229);
-            this.PnlToday.Name = "PnlToday";
-            this.PnlToday.Size = new System.Drawing.Size(977, 547);
-            this.PnlToday.TabIndex = 32;
-            this.PnlToday.Visible = false;
-            // 
-            // DgvTOTodayOrderList
-            // 
-            this.DgvTOTodayOrderList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DgvTOTodayOrderList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DgvTOTodayOrderList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvTOTodayOrderList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
-            this.DgvTOTodayOrderList.ColumnHeadersHeight = 32;
-            this.DgvTOTodayOrderList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvTOTodayOrderList.DefaultCellStyle = dataGridViewCellStyle14;
-            this.DgvTOTodayOrderList.EnableHeadersVisualStyles = false;
-            this.DgvTOTodayOrderList.Location = new System.Drawing.Point(8, 1);
-            this.DgvTOTodayOrderList.Name = "DgvTOTodayOrderList";
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvTOTodayOrderList.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
-            this.DgvTOTodayOrderList.RowHeadersWidth = 62;
-            this.DgvTOTodayOrderList.RowTemplate.Height = 28;
-            this.DgvTOTodayOrderList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvTOTodayOrderList.Size = new System.Drawing.Size(966, 532);
-            this.DgvTOTodayOrderList.TabIndex = 27;
-            // 
-            // PnlTODelayed
-            // 
-            this.PnlTODelayed.Controls.Add(this.DgvTODelayedOrderList);
-            this.PnlTODelayed.Location = new System.Drawing.Point(34, 226);
-            this.PnlTODelayed.Name = "PnlTODelayed";
-            this.PnlTODelayed.Size = new System.Drawing.Size(984, 550);
-            this.PnlTODelayed.TabIndex = 28;
-            this.PnlTODelayed.Visible = false;
-            // 
-            // DgvTODelayedOrderList
-            // 
-            this.DgvTODelayedOrderList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DgvTODelayedOrderList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DgvTODelayedOrderList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DgvTOTomorrowOrderList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvTOTomorrowOrderList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DgvTOTomorrowOrderList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Desktop;
             dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1360,172 +1201,7 @@
             dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.InfoText;
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvTODelayedOrderList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.DgvTODelayedOrderList.ColumnHeadersHeight = 32;
-            this.DgvTODelayedOrderList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn12,
-            this.dataGridViewTextBoxColumn13,
-            this.dataGridViewTextBoxColumn14,
-            this.dataGridViewTextBoxColumn15,
-            this.dataGridViewTextBoxColumn16,
-            this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18,
-            this.dataGridViewTextBoxColumn19});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvTODelayedOrderList.DefaultCellStyle = dataGridViewCellStyle11;
-            this.DgvTODelayedOrderList.EnableHeadersVisualStyles = false;
-            this.DgvTODelayedOrderList.Location = new System.Drawing.Point(4, 3);
-            this.DgvTODelayedOrderList.Name = "DgvTODelayedOrderList";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvTODelayedOrderList.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.DgvTODelayedOrderList.RowHeadersWidth = 62;
-            this.DgvTODelayedOrderList.RowTemplate.Height = 28;
-            this.DgvTODelayedOrderList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvTODelayedOrderList.Size = new System.Drawing.Size(971, 544);
-            this.DgvTODelayedOrderList.TabIndex = 27;
-            // 
-            // dataGridViewTextBoxColumn12
-            // 
-            this.dataGridViewTextBoxColumn12.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn12.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
-            this.dataGridViewTextBoxColumn12.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn13
-            // 
-            this.dataGridViewTextBoxColumn13.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn13.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
-            // 
-            // dataGridViewTextBoxColumn14
-            // 
-            this.dataGridViewTextBoxColumn14.HeaderText = "Surname";
-            this.dataGridViewTextBoxColumn14.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
-            // 
-            // dataGridViewTextBoxColumn15
-            // 
-            this.dataGridViewTextBoxColumn15.FillWeight = 130F;
-            this.dataGridViewTextBoxColumn15.HeaderText = "Book";
-            this.dataGridViewTextBoxColumn15.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
-            // 
-            // dataGridViewTextBoxColumn16
-            // 
-            this.dataGridViewTextBoxColumn16.FillWeight = 50F;
-            this.dataGridViewTextBoxColumn16.HeaderText = "Count";
-            this.dataGridViewTextBoxColumn16.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
-            // 
-            // dataGridViewTextBoxColumn17
-            // 
-            this.dataGridViewTextBoxColumn17.FillWeight = 130F;
-            this.dataGridViewTextBoxColumn17.HeaderText = "Create Date";
-            this.dataGridViewTextBoxColumn17.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
-            // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.FillWeight = 130F;
-            this.dataGridViewTextBoxColumn18.HeaderText = "Return Date";
-            this.dataGridViewTextBoxColumn18.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            // 
-            // dataGridViewTextBoxColumn19
-            // 
-            this.dataGridViewTextBoxColumn19.FillWeight = 70F;
-            this.dataGridViewTextBoxColumn19.HeaderText = "Price";
-            this.dataGridViewTextBoxColumn19.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Surname";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.FillWeight = 130F;
-            this.dataGridViewTextBoxColumn7.HeaderText = "Book";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.FillWeight = 50F;
-            this.dataGridViewTextBoxColumn8.HeaderText = "Count";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.FillWeight = 130F;
-            this.dataGridViewTextBoxColumn9.HeaderText = "Create Date";
-            this.dataGridViewTextBoxColumn9.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // dataGridViewTextBoxColumn10
-            // 
-            this.dataGridViewTextBoxColumn10.FillWeight = 130F;
-            this.dataGridViewTextBoxColumn10.HeaderText = "Return Date";
-            this.dataGridViewTextBoxColumn10.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            // 
-            // dataGridViewTextBoxColumn11
-            // 
-            this.dataGridViewTextBoxColumn11.FillWeight = 70F;
-            this.dataGridViewTextBoxColumn11.HeaderText = "Price";
-            this.dataGridViewTextBoxColumn11.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            // 
-            // PnlTOTomorrowOrderList
-            // 
-            this.PnlTOTomorrowOrderList.Controls.Add(this.DgvTOTomorrowOrderList);
-            this.PnlTOTomorrowOrderList.Location = new System.Drawing.Point(34, 226);
-            this.PnlTOTomorrowOrderList.Name = "PnlTOTomorrowOrderList";
-            this.PnlTOTomorrowOrderList.Size = new System.Drawing.Size(984, 550);
-            this.PnlTOTomorrowOrderList.TabIndex = 28;
-            this.PnlTOTomorrowOrderList.Visible = false;
-            // 
-            // DgvTOTomorrowOrderList
-            // 
-            this.DgvTOTomorrowOrderList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DgvTOTomorrowOrderList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.DgvTOTomorrowOrderList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.InfoText;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvTOTomorrowOrderList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.DgvTOTomorrowOrderList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.DgvTOTomorrowOrderList.ColumnHeadersHeight = 32;
             this.DgvTOTomorrowOrderList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn20,
@@ -1536,30 +1212,32 @@
             this.dataGridViewTextBoxColumn25,
             this.dataGridViewTextBoxColumn26,
             this.dataGridViewTextBoxColumn27});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvTOTomorrowOrderList.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvTOTomorrowOrderList.DefaultCellStyle = dataGridViewCellStyle11;
             this.DgvTOTomorrowOrderList.EnableHeadersVisualStyles = false;
-            this.DgvTOTomorrowOrderList.Location = new System.Drawing.Point(5, 3);
+            this.DgvTOTomorrowOrderList.Location = new System.Drawing.Point(3, 3);
             this.DgvTOTomorrowOrderList.Name = "DgvTOTomorrowOrderList";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DgvTOTomorrowOrderList.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvTOTomorrowOrderList.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.DgvTOTomorrowOrderList.RowHeadersWidth = 62;
             this.DgvTOTomorrowOrderList.RowTemplate.Height = 28;
             this.DgvTOTomorrowOrderList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvTOTomorrowOrderList.Size = new System.Drawing.Size(975, 544);
+            this.DgvTOTomorrowOrderList.Size = new System.Drawing.Size(967, 552);
             this.DgvTOTomorrowOrderList.TabIndex = 27;
+            this.DgvTOTomorrowOrderList.Visible = false;
+  
             // 
             // dataGridViewTextBoxColumn20
             // 
@@ -1615,6 +1293,292 @@
             this.dataGridViewTextBoxColumn27.MinimumWidth = 8;
             this.dataGridViewTextBoxColumn27.Name = "dataGridViewTextBoxColumn27";
             // 
+            // DgvTODelayedOrderList
+            // 
+            this.DgvTODelayedOrderList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvTODelayedOrderList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DgvTODelayedOrderList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvTODelayedOrderList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.DgvTODelayedOrderList.ColumnHeadersHeight = 32;
+            this.DgvTODelayedOrderList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17,
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19});
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvTODelayedOrderList.DefaultCellStyle = dataGridViewCellStyle8;
+            this.DgvTODelayedOrderList.EnableHeadersVisualStyles = false;
+            this.DgvTODelayedOrderList.Location = new System.Drawing.Point(3, 3);
+            this.DgvTODelayedOrderList.Name = "DgvTODelayedOrderList";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvTODelayedOrderList.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.DgvTODelayedOrderList.RowHeadersWidth = 62;
+            this.DgvTODelayedOrderList.RowTemplate.Height = 28;
+            this.DgvTODelayedOrderList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvTODelayedOrderList.Size = new System.Drawing.Size(967, 552);
+            this.DgvTODelayedOrderList.TabIndex = 27;
+            this.DgvTODelayedOrderList.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.HeaderText = "Surname";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.FillWeight = 130F;
+            this.dataGridViewTextBoxColumn15.HeaderText = "Book";
+            this.dataGridViewTextBoxColumn15.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.FillWeight = 50F;
+            this.dataGridViewTextBoxColumn16.HeaderText = "Count";
+            this.dataGridViewTextBoxColumn16.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.FillWeight = 130F;
+            this.dataGridViewTextBoxColumn17.HeaderText = "Create Date";
+            this.dataGridViewTextBoxColumn17.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.FillWeight = 130F;
+            this.dataGridViewTextBoxColumn18.HeaderText = "Return Date";
+            this.dataGridViewTextBoxColumn18.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.FillWeight = 70F;
+            this.dataGridViewTextBoxColumn19.HeaderText = "Price";
+            this.dataGridViewTextBoxColumn19.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
+            // DgvTOTodayOrderList
+            // 
+            this.DgvTOTodayOrderList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DgvTOTodayOrderList.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DgvTOTodayOrderList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.InfoText;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvTOTodayOrderList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.DgvTOTodayOrderList.ColumnHeadersHeight = 32;
+            this.DgvTOTodayOrderList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11});
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvTOTodayOrderList.DefaultCellStyle = dataGridViewCellStyle14;
+            this.DgvTOTodayOrderList.EnableHeadersVisualStyles = false;
+            this.DgvTOTodayOrderList.Location = new System.Drawing.Point(3, 3);
+            this.DgvTOTodayOrderList.Name = "DgvTOTodayOrderList";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.MenuBar;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DgvTOTodayOrderList.RowHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.DgvTOTodayOrderList.RowHeadersWidth = 62;
+            this.DgvTOTodayOrderList.RowTemplate.Height = 28;
+            this.DgvTOTodayOrderList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvTOTodayOrderList.Size = new System.Drawing.Size(967, 552);
+            this.DgvTOTodayOrderList.TabIndex = 27;
+            this.DgvTOTodayOrderList.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Surname";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.FillWeight = 130F;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Book";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.FillWeight = 50F;
+            this.dataGridViewTextBoxColumn8.HeaderText = "Count";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.FillWeight = 130F;
+            this.dataGridViewTextBoxColumn9.HeaderText = "Create Date";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.FillWeight = 130F;
+            this.dataGridViewTextBoxColumn10.HeaderText = "Return Date";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.FillWeight = 70F;
+            this.dataGridViewTextBoxColumn11.HeaderText = "Price";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 8;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // BtnTomorrow
+            // 
+            this.BtnTomorrow.BackColor = System.Drawing.Color.YellowGreen;
+            this.BtnTomorrow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnTomorrow.FlatAppearance.BorderSize = 0;
+            this.BtnTomorrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnTomorrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnTomorrow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnTomorrow.Location = new System.Drawing.Point(694, 159);
+            this.BtnTomorrow.Name = "BtnTomorrow";
+            this.BtnTomorrow.Size = new System.Drawing.Size(322, 65);
+            this.BtnTomorrow.TabIndex = 30;
+            this.BtnTomorrow.Text = "TOMORROW";
+            this.BtnTomorrow.UseVisualStyleBackColor = false;
+            this.BtnTomorrow.Click += new System.EventHandler(this.BtnTomorrow_Click);
+            // 
+            // BtnDelayed
+            // 
+            this.BtnDelayed.BackColor = System.Drawing.Color.Crimson;
+            this.BtnDelayed.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnDelayed.FlatAppearance.BorderSize = 0;
+            this.BtnDelayed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDelayed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDelayed.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnDelayed.Location = new System.Drawing.Point(39, 159);
+            this.BtnDelayed.Name = "BtnDelayed";
+            this.BtnDelayed.Size = new System.Drawing.Size(322, 65);
+            this.BtnDelayed.TabIndex = 31;
+            this.BtnDelayed.Text = "DELAYED";
+            this.BtnDelayed.UseVisualStyleBackColor = false;
+            this.BtnDelayed.Click += new System.EventHandler(this.BtnDelayed_Click);
+            // 
+            // BtnToday
+            // 
+            this.BtnToday.BackColor = System.Drawing.Color.Gold;
+            this.BtnToday.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnToday.FlatAppearance.BorderSize = 0;
+            this.BtnToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnToday.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnToday.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnToday.Location = new System.Drawing.Point(366, 159);
+            this.BtnToday.Name = "BtnToday";
+            this.BtnToday.Size = new System.Drawing.Size(323, 65);
+            this.BtnToday.TabIndex = 29;
+            this.BtnToday.Text = "TODAY";
+            this.BtnToday.UseVisualStyleBackColor = false;
+            this.BtnToday.Click += new System.EventHandler(this.BtnToday_Click);
+            // 
+            // LblTOTitle
+            // 
+            this.LblTOTitle.AutoSize = true;
+            this.LblTOTitle.Font = new System.Drawing.Font("Microsoft Tai Le", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTOTitle.Location = new System.Drawing.Point(131, 44);
+            this.LblTOTitle.Name = "LblTOTitle";
+            this.LblTOTitle.Size = new System.Drawing.Size(316, 51);
+            this.LblTOTitle.TabIndex = 3;
+            this.LblTOTitle.Text = "TRACK ORDERS";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(16, 13);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(110, 106);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            // 
+            // PnlDGVHolder
+            // 
+            this.PnlDGVHolder.BackColor = System.Drawing.Color.MintCream;
+            this.PnlDGVHolder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlDGVHolder.Controls.Add(this.DgvTODelayedOrderList);
+            this.PnlDGVHolder.Controls.Add(this.DgvTOTomorrowOrderList);
+            this.PnlDGVHolder.Controls.Add(this.DgvTOTodayOrderList);
+            this.PnlDGVHolder.Location = new System.Drawing.Point(39, 231);
+            this.PnlDGVHolder.Name = "PnlDGVHolder";
+            this.PnlDGVHolder.Size = new System.Drawing.Size(975, 560);
+            this.PnlDGVHolder.TabIndex = 32;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -1668,14 +1632,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.PnlTrackOrders.ResumeLayout(false);
             this.PnlTrackOrders.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.PnlTOButtons.ResumeLayout(false);
-            this.PnlToday.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvTOTodayOrderList)).EndInit();
-            this.PnlTODelayed.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvTODelayedOrderList)).EndInit();
-            this.PnlTOTomorrowOrderList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DgvTOTomorrowOrderList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvTODelayedOrderList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvTOTodayOrderList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.PnlDGVHolder.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1767,14 +1728,10 @@
         private System.Windows.Forms.Panel PnlTrackOrders;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label LblTOTitle;
-        private System.Windows.Forms.Panel PnlTOButtons;
         private System.Windows.Forms.Button BtnDelayed;
         private System.Windows.Forms.Button BtnTomorrow;
         private System.Windows.Forms.Button BtnToday;
-        private System.Windows.Forms.Panel PnlToday;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView DgvTOTodayOrderList;
-        private System.Windows.Forms.Panel PnlTODelayed;
         private System.Windows.Forms.DataGridView DgvTODelayedOrderList;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
@@ -1792,7 +1749,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
-        private System.Windows.Forms.Panel PnlTOTomorrowOrderList;
         private System.Windows.Forms.DataGridView DgvTOTomorrowOrderList;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
@@ -1802,5 +1758,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn25;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn26;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn27;
+        private System.Windows.Forms.Panel PnlDGVHolder;
     }
 }

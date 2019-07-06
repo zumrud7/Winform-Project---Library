@@ -19,6 +19,8 @@ namespace Library.Forms
 
         private decimal totalPrice = 0;
 
+        private decimal ReturnBookTotalPrice = 0;
+
         private Library.Models.Book SelectedBook;
 
         private decimal RemovedPrice;
@@ -505,18 +507,18 @@ namespace Library.Forms
 
             TxtRBBookName.Text = SelectedItem.Book.Name;
             NumRBCount.Value = SelectedItem.Count;
-            totalPrice = SelectedItem.Price;
+            ReturnBookTotalPrice = SelectedItem.Price;
             DPRBReturn.Value = SelectedItem.ReturnDate;
 
 
-            LblRBTotalPrice.Text = (totalPrice).ToString();
+            LblRBTotalPrice.Text = (ReturnBookTotalPrice).ToString();
 
         }
 
 
         #endregion
 
-        #region VALIDATION AND CALCULATION METHODS
+        #region VALIDATION / RESET / CALCULATION METHODS
         private bool ValidateNumCount()
         {
             if (NumRBCount.Value == 0)
@@ -541,8 +543,8 @@ namespace Library.Forms
 
         private void ReturnPriceCalcWithCount()
         {
-            totalPrice = SelectedItem.Book.Price * Convert.ToDecimal(NumRBCount.Value);
-            LblRBTotalPrice.Text = totalPrice.ToString();
+            ReturnBookTotalPrice = SelectedItem.Book.Price * Convert.ToDecimal(NumRBCount.Value);
+            LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
         }
 
@@ -555,7 +557,8 @@ namespace Library.Forms
             TxtRBLastName.Text = string.Empty;
             TxtRBBookName.Text = string.Empty;
             NumRBCount.Value = 1;
-            totalPrice = 0;
+            ReturnBookTotalPrice = 0;
+            LblRBTotalPrice.Text = "0";
             DPRBReturn.Value = DateTime.Now;
 
 
@@ -568,65 +571,65 @@ namespace Library.Forms
 
                 if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(7) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddDays(14))
                 {
-                    totalPrice = 0;
-                    totalPrice = SelectedItem.Book.Price * 2 * NumRBCount.Value;
-                    LblRBTotalPrice.Text = totalPrice.ToString();
+                    ReturnBookTotalPrice = 0;
+                    ReturnBookTotalPrice = SelectedItem.Book.Price * 2 * NumRBCount.Value;
+                    LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
                 }
                 else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(14) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddDays(21))
                 {
-                    totalPrice = 0;
-                    totalPrice = SelectedItem.Book.Price * 3 * NumRBCount.Value;
-                    LblRBTotalPrice.Text = totalPrice.ToString();
+                    ReturnBookTotalPrice = 0;
+                    ReturnBookTotalPrice = SelectedItem.Book.Price * 3 * NumRBCount.Value;
+                    LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
                 }
                 else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(21) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddMonths(1))
                 {
-                    totalPrice = 0;
-                    totalPrice = SelectedItem.Book.Price * 4 * NumRBCount.Value;
-                    LblRBTotalPrice.Text = totalPrice.ToString();
+                    ReturnBookTotalPrice = 0;
+                    ReturnBookTotalPrice = SelectedItem.Book.Price * 4 * NumRBCount.Value;
+                    LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
                 }
                 else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddMonths(1) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddMonths(3))
                 {
-                    totalPrice = 0;
-                    totalPrice = SelectedItem.Book.Price * 5 * NumRBCount.Value;
-                    LblRBTotalPrice.Text = totalPrice.ToString();
+                    ReturnBookTotalPrice = 0;
+                    ReturnBookTotalPrice = SelectedItem.Book.Price * 5 * NumRBCount.Value;
+                    LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
                 }
-                totalPrice = 0;
-                totalPrice = SelectedItem.Book.Price * NumRBCount.Value;
+                ReturnBookTotalPrice = 0;
+                ReturnBookTotalPrice = SelectedItem.Book.Price * NumRBCount.Value;
 
-                LblRBTotalPrice.Text = totalPrice.ToString();
+                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
             }
 
             else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(7) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddDays(14))
             {
-                totalPrice = 0;
-                totalPrice = SelectedItem.Book.Price * 2 * NumRBCount.Value;
-                LblRBTotalPrice.Text = totalPrice.ToString();
+                ReturnBookTotalPrice = 0;
+                ReturnBookTotalPrice = SelectedItem.Book.Price * 2 * NumRBCount.Value;
+                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
             }
             else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(14) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddDays(21))
             {
-                totalPrice = 0;
-                totalPrice = SelectedItem.Book.Price * 3 * NumRBCount.Value;
-                LblRBTotalPrice.Text = totalPrice.ToString();
+                ReturnBookTotalPrice = 0;
+                ReturnBookTotalPrice = SelectedItem.Book.Price * 3 * NumRBCount.Value;
+                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
             }
             else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(21) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddMonths(1))
             {
-                totalPrice = 0;
-                totalPrice = SelectedItem.Book.Price * 4 * NumRBCount.Value;
-                LblRBTotalPrice.Text = totalPrice.ToString();
+                ReturnBookTotalPrice = 0;
+                ReturnBookTotalPrice = SelectedItem.Book.Price * 4 * NumRBCount.Value;
+                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
             }
             else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddMonths(1) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddMonths(3))
             {
-                totalPrice = 0;
-                totalPrice = SelectedItem.Book.Price * 5 * NumRBCount.Value;
-                LblRBTotalPrice.Text = totalPrice.ToString();
+                ReturnBookTotalPrice = 0;
+                ReturnBookTotalPrice = SelectedItem.Book.Price * 5 * NumRBCount.Value;
+                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
             }
             else if (DPRBReturn.Value > SelectedItem.ReturnDate)
@@ -634,13 +637,13 @@ namespace Library.Forms
 
                 var span = DPRBReturn.Value - SelectedItem.ReturnDate;
                 int days = span.Days;
-                MessageBox.Show("Delayed days " + days.ToString());
+                //MessageBox.Show("Delayed days " + days.ToString());
 
                 var fine = days * (Convert.ToInt32(SelectedItem.Book.Price) * 0.5);
-                MessageBox.Show("Applied fine " + fine.ToString());
+                //MessageBox.Show("Applied fine " + fine.ToString());
 
-                totalPrice += Convert.ToDecimal(fine);
-                LblRBTotalPrice.Text = totalPrice.ToString();
+                ReturnBookTotalPrice += Convert.ToDecimal(fine);
+                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
             }
 
 
@@ -672,12 +675,20 @@ namespace Library.Forms
         #region BUTTON FUNCTIONS
         private void BtnRBReturnBook_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Are you sure to complete booking?", "Complete");
+            DialogResult r = MessageBox.Show("Are you sure to complete the booking?", "Complete", MessageBoxButtons.YesNo);
+
+            if(r == DialogResult.Yes)
+            {
+                MessageBox.Show("Booking is successfully completed.", "Update");
+            }
 
             SelectedItem.isCompleted = true;
             SelectedItem.Book.Count += Convert.ToInt32(NumRBCount.Value);
 
             _context.SaveChanges();
+
+            this.ReturnBookTotalPrice = 0;
+            LblRBTotalPrice.Text = (this.ReturnBookTotalPrice).ToString();
 
             ResetReturnBookForm();
         }
@@ -694,6 +705,8 @@ namespace Library.Forms
 
 
         #region TRACK ORDERS --- BUTTON
+
+        #region FILL DGV ORDER LIST ACCORDING TO RETURN DATE
         private void FillTodayOrderList()
         {
             DgvTOTodayOrderList.Rows.Clear();
@@ -701,7 +714,10 @@ namespace Library.Forms
             DgvTOTodayOrderList.Columns[5].DefaultCellStyle.Format = "dd-MM-yyyy";
             DgvTOTodayOrderList.Columns[6].DefaultCellStyle.Format = "dd-MM-yyyy";
 
-            List<OrderItem> orderitems = _context.OrderItems.Include("Book").Include("Order").Include("Order.Customer").Where(o => o.ReturnDate == DateTime.Now && o.isCompleted == false).ToList();
+            var today = DateTime.Now.Date;
+            var tomorrow = today.AddHours(24);
+
+            List<OrderItem> orderitems = _context.OrderItems.Include("Book").Include("Order").Include("Order.Customer").Where(o => o.ReturnDate > today && o.ReturnDate < tomorrow && o.isCompleted == false).ToList();
 
             foreach (var item in orderitems)
             {
@@ -726,7 +742,9 @@ namespace Library.Forms
             DgvTODelayedOrderList.Columns[5].DefaultCellStyle.Format = "dd-MM-yyyy";
             DgvTODelayedOrderList.Columns[6].DefaultCellStyle.Format = "dd-MM-yyyy";
 
-            List<OrderItem> orderitems = _context.OrderItems.Include("Book").Include("Order").Include("Order.Customer").Where(o => o.ReturnDate < DateTime.Now && o.isCompleted == false).ToList();
+            var baselineDate = DateTime.Now.AddHours(-24);
+
+            List<OrderItem> orderitems = _context.OrderItems.Include("Book").Include("Order").Include("Order.Customer").Where(o => o.ReturnDate < baselineDate && o.isCompleted == false).ToList();
 
             foreach (var item in orderitems)
             {
@@ -751,7 +769,11 @@ namespace Library.Forms
             DgvTOTomorrowOrderList.Columns[5].DefaultCellStyle.Format = "dd-MM-yyyy";
             DgvTOTomorrowOrderList.Columns[6].DefaultCellStyle.Format = "dd-MM-yyyy";
 
-            List<OrderItem> orderitems = _context.OrderItems.Include("Book").Include("Order").Include("Order.Customer").Where(o => o.ReturnDate == Convert.ToDateTime(DateTime.Now.AddDays(1)) && o.isCompleted == false).ToList();
+            var today = DateTime.Now.Date;
+            var StartDate = today.AddHours(24);
+            var EndDate = today.AddHours(48);
+
+            List<OrderItem> orderitems = _context.OrderItems.Include("Book").Include("Order").Include("Order.Customer").Where(o => o.ReturnDate > StartDate && o.ReturnDate < EndDate && o.isCompleted == false).ToList();
 
             foreach (var item in orderitems)
             {
@@ -769,27 +791,31 @@ namespace Library.Forms
         }
 
 
+        #endregion
+
+
+        #region BUTTON FUNCTIONS
+
         private void BtnToday_Click(object sender, EventArgs e)
         {
-            PnlToday.Visible = true;
-            PnlTOTomorrowOrderList.Visible = false;
-            PnlTODelayed.Visible = false;
+            DgvTODelayedOrderList.Visible = false;
+            DgvTOTodayOrderList.Visible = true;
+            DgvTOTomorrowOrderList.Visible = false;
 
             BtnToday.FlatAppearance.BorderSize = 1;
             BtnToday.FlatAppearance.BorderColor = SystemColors.ControlText;
             BtnTomorrow.FlatAppearance.BorderSize = 0;
             BtnDelayed.FlatAppearance.BorderSize = 0;
 
-
             FillTodayOrderList();
-        }
 
+        }
 
         private void BtnTomorrow_Click(object sender, EventArgs e)
         {
-            PnlTOTomorrowOrderList.Visible = true;
-            PnlTODelayed.Visible = false;
-            PnlToday.Visible = false;
+            DgvTODelayedOrderList.Visible = false;
+            DgvTOTodayOrderList.Visible = false;
+            DgvTOTomorrowOrderList.Visible = true;
 
             BtnTomorrow.FlatAppearance.BorderSize = 1;
             BtnTomorrow.FlatAppearance.BorderColor = SystemColors.ControlText;
@@ -797,26 +823,28 @@ namespace Library.Forms
             BtnDelayed.FlatAppearance.BorderSize = 0;
 
             FillTomorrowOrderList();
+
+            
         }
 
         private void BtnDelayed_Click(object sender, EventArgs e)
         {
-            PnlTODelayed.Visible = true;
-            PnlToday.Visible = false;
-            PnlTOTomorrowOrderList.Visible = false;
+            DgvTODelayedOrderList.Visible = true;
+            DgvTOTodayOrderList.Visible = false;
+            DgvTOTomorrowOrderList.Visible = false;
 
             BtnDelayed.FlatAppearance.BorderSize = 1;
             BtnDelayed.FlatAppearance.BorderColor = SystemColors.ControlText;
             BtnTomorrow.FlatAppearance.BorderSize = 0;
             BtnToday.FlatAppearance.BorderSize = 0;
 
-
             FillDelayedOrderList();
         }
 
-
         #endregion
 
+
+        #endregion
 
     }
 

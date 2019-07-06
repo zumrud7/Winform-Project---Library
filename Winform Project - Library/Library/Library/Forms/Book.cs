@@ -27,6 +27,7 @@ namespace Library.Forms
             FillBookList();
         }
 
+
         #region FILL DGV WITH BOOK LIST
         private void FillBookList()
         {
@@ -98,6 +99,7 @@ namespace Library.Forms
 
 
         #region BUTTON FUNCTIONS
+
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             if (!Validation())
@@ -108,7 +110,7 @@ namespace Library.Forms
             Library.Models.Book book = new Library.Models.Book();
 
             book.Name = TxtName.Text;
-            book.Price = Convert.ToInt32(TxtPrice.Text);
+            book.Price = Convert.ToDecimal(TxtPrice.Text);
             book.Count = Convert.ToInt32(NumCount.Text);
 
 
