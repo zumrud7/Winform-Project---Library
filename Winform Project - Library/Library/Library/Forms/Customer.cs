@@ -168,7 +168,6 @@ namespace Library.Forms
             #endregion
 
 
-
             _context.Customers.Add(customer);
             _context.SaveChanges();
 

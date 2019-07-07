@@ -77,6 +77,7 @@ namespace Library.Forms
             Customer customer = new Customer();
 
             customer.ShowDialog();
+
         }
 
         private void BtnBook_Click(object sender, EventArgs e)
@@ -125,6 +126,7 @@ namespace Library.Forms
 
         private void BtnReturnBook_Click(object sender, EventArgs e)
         {
+
             PnlNewOrder.Visible = false;
             PnlReturnBook.Visible = true;
             PnlTrackOrders.Visible = false;
@@ -138,6 +140,7 @@ namespace Library.Forms
 
         private void BtnTrackOrders_Click(object sender, EventArgs e)
         {
+
             PnlTrackOrders.Visible = true;
             PnlNewOrder.Visible = false;
             PnlReturnBook.Visible = false;
@@ -157,6 +160,9 @@ namespace Library.Forms
         #region FUNCTIONS TO FILL COMBOBOXES
         private void FillCustomerList()
         {
+
+            CmbCNOCustomer.Items.Clear();
+
             foreach(var item in _context.Customers.ToList())
             {
                 CmbCNOCustomer.Items.Add(item.FirstName + " " + item.LastName);
@@ -166,7 +172,9 @@ namespace Library.Forms
 
         private void FillBookList()
         {
-            foreach(var item in _context.Books.ToList())
+            CmbCNOBook.Items.Clear();
+
+            foreach (var item in _context.Books.ToList())
             {
                 if (item.Count == 0)
                 {
@@ -175,9 +183,9 @@ namespace Library.Forms
                 else
                 {
                     CmbCNOBook.Items.Add(item.Name);
-            }
+                }
 
-        }
+            }
         }
 
 
@@ -426,6 +434,7 @@ namespace Library.Forms
 
             DgvCNOBooks.Rows.Add(SelectedBook.Id, SelectedBook.Name, NumCNOCount.Value, DateReturn.Value, price);
 
+            
 
             SelectedBook.Count -= Convert.ToInt32(NumCNOCount.Value);
 
@@ -507,11 +516,11 @@ namespace Library.Forms
 
             TxtRBBookName.Text = SelectedItem.Book.Name;
             NumRBCount.Value = SelectedItem.Count;
-            ReturnBookTotalPrice = SelectedItem.Price;
+            this.ReturnBookTotalPrice = SelectedItem.Price;
             DPRBReturn.Value = SelectedItem.ReturnDate;
 
 
-            LblRBTotalPrice.Text = (ReturnBookTotalPrice).ToString();
+            LblRBTotalPrice.Text = this.ReturnBookTotalPrice.ToString();
 
         }
 
@@ -541,10 +550,26 @@ namespace Library.Forms
             return true;
         }
 
+        private bool ValidateReturnDate()
+        {
+            if(DPRBReturn.Value < SelectedItem.Order.CreatedOn.AddHours(-24))
+            {
+                LblRBReturnDate.ForeColor = Color.Red;
+                MessageBox.Show("Return date cannot be earlier than order create date", "Attention");
+                DPRBReturn.Value = SelectedItem.ReturnDate;
+                LblRBTotalPrice.Text = SelectedItem.Price.ToString();
+
+            }
+
+            LblRBReturnDate.ForeColor = SystemColors.ControlText;
+            return true;
+        }
+
         private void ReturnPriceCalcWithCount()
         {
-            ReturnBookTotalPrice = SelectedItem.Book.Price * Convert.ToDecimal(NumRBCount.Value);
-            LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
+            this.ReturnBookTotalPrice = SelectedItem.Book.Price * Convert.ToDecimal(NumRBCount.Value);
+            LblRBTotalPrice.Text = this.ReturnBookTotalPrice.ToString();
+
 
         }
 
@@ -557,8 +582,6 @@ namespace Library.Forms
             TxtRBLastName.Text = string.Empty;
             TxtRBBookName.Text = string.Empty;
             NumRBCount.Value = 1;
-            ReturnBookTotalPrice = 0;
-            LblRBTotalPrice.Text = "0";
             DPRBReturn.Value = DateTime.Now;
 
 
@@ -566,95 +589,64 @@ namespace Library.Forms
 
         private void ReturnPriceCalcWithDate()
         {
+
+            var span = DPRBReturn.Value - SelectedItem.ReturnDate;
+            int days = span.Days;
+
+            var fine = days * (Convert.ToInt32(SelectedItem.Book.Price) * 0.05) * Convert.ToInt32(NumRBCount.Value);
+
+
             if (DPRBReturn.Value > SelectedItem.Order.CreatedOn && DPRBReturn.Value < SelectedItem.ReturnDate)
             {
-
-                if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(7) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddDays(14))
+                if(DPRBReturn.Value < SelectedItem.Order.CreatedOn.AddDays(7))
                 {
-                    ReturnBookTotalPrice = 0;
+                    ReturnBookTotalPrice = SelectedItem.Book.Price * NumRBCount.Value;
+                    LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
+                }
+                else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(7) && DPRBReturn.Value < SelectedItem.Order.CreatedOn.AddDays(14))
+                {
                     ReturnBookTotalPrice = SelectedItem.Book.Price * 2 * NumRBCount.Value;
                     LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
                 }
-                else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(14) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddDays(21))
+                else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(14) && DPRBReturn.Value < SelectedItem.Order.CreatedOn.AddDays(21))
                 {
-                    ReturnBookTotalPrice = 0;
                     ReturnBookTotalPrice = SelectedItem.Book.Price * 3 * NumRBCount.Value;
                     LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
                 }
-                else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(21) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddMonths(1))
+                else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(21) && DPRBReturn.Value < SelectedItem.Order.CreatedOn.AddMonths(1))
                 {
-                    ReturnBookTotalPrice = 0;
                     ReturnBookTotalPrice = SelectedItem.Book.Price * 4 * NumRBCount.Value;
                     LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
                 }
-                else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddMonths(1) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddMonths(3))
+                else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddMonths(1) && DPRBReturn.Value < SelectedItem.Order.CreatedOn.AddMonths(3))
                 {
-                    ReturnBookTotalPrice = 0;
                     ReturnBookTotalPrice = SelectedItem.Book.Price * 5 * NumRBCount.Value;
                     LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
                 }
-                ReturnBookTotalPrice = 0;
-                ReturnBookTotalPrice = SelectedItem.Book.Price * NumRBCount.Value;
-
-                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
 
             }
 
-            else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(7) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddDays(14))
+
+            else
             {
-                ReturnBookTotalPrice = 0;
-                ReturnBookTotalPrice = SelectedItem.Book.Price * 2 * NumRBCount.Value;
-                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
-
-            }
-            else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(14) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddDays(21))
-            {
-                ReturnBookTotalPrice = 0;
-                ReturnBookTotalPrice = SelectedItem.Book.Price * 3 * NumRBCount.Value;
-                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
-
-            }
-            else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddDays(21) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddMonths(1))
-            {
-                ReturnBookTotalPrice = 0;
-                ReturnBookTotalPrice = SelectedItem.Book.Price * 4 * NumRBCount.Value;
-                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
-
-            }
-            else if (DPRBReturn.Value > SelectedItem.Order.CreatedOn.AddMonths(1) && DPRBReturn.Value <= SelectedItem.Order.CreatedOn.AddMonths(3))
-            {
-                ReturnBookTotalPrice = 0;
-                ReturnBookTotalPrice = SelectedItem.Book.Price * 5 * NumRBCount.Value;
-                LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
-
-            }
-            else if (DPRBReturn.Value > SelectedItem.ReturnDate)
-            {
-
-                var span = DPRBReturn.Value - SelectedItem.ReturnDate;
-                int days = span.Days;
-                //MessageBox.Show("Delayed days " + days.ToString());
-
-                var fine = days * (Convert.ToInt32(SelectedItem.Book.Price) * 0.5);
-                //MessageBox.Show("Applied fine " + fine.ToString());
-
+                ReturnBookTotalPrice = SelectedItem.Price;
                 ReturnBookTotalPrice += Convert.ToDecimal(fine);
                 LblRBTotalPrice.Text = ReturnBookTotalPrice.ToString();
             }
-
-
 
         }
 
         #endregion
 
-        #region DATE PIICKER AND NUMERIC-UP-DOWN VALUE CHANGE
+        #region DATE PICKER AND NUMERIC-UP-DOWN VALUE CHANGE
         private void DPRBReturn_ValueChanged(object sender, EventArgs e)
         {
+            ValidateReturnDate();
+            ReturnPriceCalcWithCount();
             ReturnPriceCalcWithDate();
         }
 
@@ -684,13 +676,15 @@ namespace Library.Forms
 
             SelectedItem.isCompleted = true;
             SelectedItem.Book.Count += Convert.ToInt32(NumRBCount.Value);
+            SelectedItem.Price = ReturnBookTotalPrice;
 
             _context.SaveChanges();
 
+
+            ResetReturnBookForm();
             this.ReturnBookTotalPrice = 0;
             LblRBTotalPrice.Text = (this.ReturnBookTotalPrice).ToString();
 
-            ResetReturnBookForm();
         }
 
         private void BtnRBSearch_Click(object sender, EventArgs e)

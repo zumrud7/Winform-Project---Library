@@ -40,7 +40,6 @@
             this.LblTo = new System.Windows.Forms.Label();
             this.BtnSearch = new System.Windows.Forms.Button();
             this.BtnExport = new System.Windows.Forms.Button();
-            this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.DgvOrderList = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -155,15 +154,6 @@
             this.BtnExport.TabIndex = 21;
             this.BtnExport.Text = "EXPORT";
             this.BtnExport.UseVisualStyleBackColor = false;
-            this.BtnExport.Click += new System.EventHandler(this.BtnExport_Click);
-            // 
-            // backgroundWorker
-            // 
-            this.backgroundWorker.WorkerReportsProgress = true;
-            this.backgroundWorker.WorkerSupportsCancellation = true;
-            this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker_DoWork);
-            this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.BackgroundWorker_ProgressChanged);
-            this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.BackgroundWorker_RunWorkerCompleted);
             // 
             // DgvOrderList
             // 
@@ -295,7 +285,6 @@
         private System.Windows.Forms.Label LblTo;
         private System.Windows.Forms.Button BtnSearch;
         private System.Windows.Forms.Button BtnExport;
-        private System.ComponentModel.BackgroundWorker backgroundWorker;
         private System.Windows.Forms.DataGridView DgvOrderList;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;

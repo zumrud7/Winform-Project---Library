@@ -50,7 +50,6 @@ C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Librar
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.OrderTableAdded.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.OrderTblAddedInContext.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.csprojAssemblyReference.cache
-C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Test.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Forms.Report.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.IsCompletedColumnAddedToOrderItemTbl.resources
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.DefaultValueFalseAddedtoIsCompletedColumn.resources
@@ -108,3 +107,6 @@ C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Librar
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\ClosedXML.xml
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\bin\Debug\ExcelNumberFormat.xml
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.PhoneNoDataAnnotationUpdateCustomerTable.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.RegExUpdateCustomerTbl.resources
+C:\Users\ASUS\Desktop\Winform-Project---Library\Winform Project - Library\Library\Library\obj\Debug\Library.Migrations.RegExRemovedCustomerTbl.resources
