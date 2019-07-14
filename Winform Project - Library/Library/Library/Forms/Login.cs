@@ -28,30 +28,25 @@ namespace Library.Forms
         #region LOGIN - EXIT BUTTON FUNCTIONS
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            foreach(var item in _context.Users.ToList())
-            {
-
-            }
+            LblPassword.ForeColor = SystemColors.ControlText;
+            
             if (!_context.Users.Any(u => u.UserName == TxtUsername.Text))
             {
                 LblUserName.ForeColor = Color.Red;
                 MessageBox.Show("Please enter correct username.", "Incorrect value");
                 return;
             }
-            if(!_context.Users.Any(u=>u.Password == TxtPassword.Text))
+            if (_context.Users.Any(u => u.UserName == TxtUsername.Text && u.Password == TxtPassword.Text))
+            {
+                Dashboard dashboard = new Dashboard("Welcome, " + TxtUsername.Text + "!");
+                this.Hide();
+                dashboard.Show();
+            }
+            else
             {
                 LblUserName.ForeColor = SystemColors.ControlText;
                 LblPassword.ForeColor = Color.Red;
                 MessageBox.Show("Please enter correct password", "Incorrect value");
-            }
-            else
-            {
-                LblPassword.ForeColor = SystemColors.ControlText;
-
-                Dashboard dashboard = new Dashboard("Welcome, " +TxtUsername.Text+"!");
-
-                this.Hide();
-                dashboard.Show();
             }
         }
 
